@@ -1,0 +1,358 @@
+{
+  "version": "1.0",
+  "source": "Közigazgatási alapvizsga – 15. kiadás (2026), Nemzeti Közszolgálati Egyetem",
+  "modules": [
+    {
+      "id": 1,
+      "name": "Alkotmányos és jogi alapismeretek",
+      "icon": "⚖️",
+      "color": "#6c63ff",
+      "submodules": [
+        {
+          "id": "1.1",
+          "name": "Alkotmányos és jogi ismeretek",
+          "cards": [
+            { "front": "Mi a jog?", "back": "Az állam által alkotott vagy elismert kötelező magatartási szabályok összessége, amelyek érvényesülését állami szervek kényszerrel biztosítják. Eltér a társadalom egyéb normáitól (szokás, erkölcs, vallás), amelyek betartása önkéntes." },
+            { "front": "Mi a jogforrási hierarchia elve?", "back": "Az alacsonyabb szintű jogforrás nem lehet ellentétes a magasabb szintűvel. Ez biztosítja a jogrendszer rendezettségét és egységét." },
+            { "front": "Mikor lépett hatályba Magyarország Alaptörvénye?", "back": "2012. január 1-jén. Az Országgyűlés 2011-ben fogadta el. Formálisan nem törvény: nincs száma, önálló megnevezése van. Hivatkozik a történeti alkotmányra is." },
+            { "front": "Mi volt az első írott alkotmányunk?", "back": "Az 1949. évi XX. törvény. Az 1989-1990-es alkotmánymódosítással alakult át demokratikus jogállami alkotmánnyá. 2012. január 1-jén lépett a helyébe az Alaptörvény." },
+            { "front": "Sorold fel az alkotmányos elveket!", "back": "1) Népszuverenitás és népképviselet, 2) hatalmi ágak megosztása, 3) jogegyenlőség, 4) jogállamiság, 5) törvények uralma, 6) végrehajtó hatalom felelőssége, 7) közhatalom törvényhez kötöttsége, 8) bírói függetlenség, 9) alapvető jogok érvényesítése." },
+            { "front": "Ki dolgozta ki a hatalommegosztás elméletét?", "back": "Charles de Montesquieu francia gondolkodó (1689-1755). Három hatalmi ág: törvényhozó, végrehajtó és bírói. A modern alkotmányosság alappillére." },
+            { "front": "Mikor érvényes és eredményes egy népszavazás?", "back": "Érvényes: az összes választópolgár több mint fele érvényesen szavaz. Eredményes: a szavazók több mint fele azonos szavazatot ad le." },
+            { "front": "Mit jelent a jogegyenlőség elve?", "back": "Magyarország minden ember számára biztosítja az alapvető jogokat bármely megkülönböztetés (faj, szín, nem, fogyatékosság, nyelv, vallás, politikai vagy más vélemény, nemzeti vagy társadalmi származás stb.) nélkül. A nők és férfiak egyenjogúak." },
+            { "front": "Mik az alapjogi generációk?", "back": "I. generáció: élethez, szabadsághoz, méltósághoz való jog (klasszikus szabadságjogok). II. generáció: szociális, gazdasági, kulturális jogok. III. generáció: kollektív jogok, pl. egészséges környezethez való jog." },
+            { "front": "Mely jogok abszolút jogok (nem korlátozhatók)?", "back": "Az élethez és emberi méltósághoz való jog (magzati élet védelme), valamint a kínzás, embertelen bánásmód tilalma. A férfiak és nők egyenjogúsága szintén nem korlátozható." }
+          ],
+          "context": "A jog: állam által alkotott vagy elismert kötelező magatartási szabály, kényszerrel érvényesítve. Jogforrási hierarchia: alacsonyabb nem lehet ellentétes magasabbal. Magyar jogrendszer alapja az Alaptörvény (2012. január 1-jén lépett hatályba), amely felváltotta az 1949. évi XX. törvényt (első írott alkotmány). Alkotmányos elvek: népszuverenitás, hatalmi ágak megosztása (Montesquieu: törvényhozó, végrehajtó, bírói), jogegyenlőség, jogállamiság, törvények uralma, végrehajtó hatalom felelőssége, közhatalom törvényhez kötöttsége, bírói függetlenség, alapvető jogok érvényesítése. Közvetlen demokrácia eszköze: népszavazás (érvényesség: összes választópolgár >50%, eredményesség: szavazók >50% azonos szavazat). Alapjogi generációk: I. (élet, méltóság), II. (szociális), III. (egészséges környezet). Abszolút (nem korlátozható) jogok: élethez és méltósághoz való jog, férfi-női egyenjogúság, kínzás tilalma."
+        },
+        {
+          "id": "1.2",
+          "name": "Államszervezet",
+          "cards": [
+            { "front": "Hány képviselő alkotja az Országgyűlést és hogyan?", "back": "199 képviselő: 106 egyéni választókerületi + 93 országos listás mandátum. Vegyes választási rendszer, egyfordulós, 5%-os parlamenti küszöb (pártlistáknál). 4 évre választják." },
+            { "front": "Milyen szavazástípusokat ismer az Országgyűlés?", "back": "1) Egyszerű/relatív többség: jelenlévők >50% (legtöbb törvény, 'feles törvény'). 2) Abszolút többség: összes képviselő >50% (pl. miniszterelnök). 3) Minősített többség: jelenlévők 2/3 (sarkalatos törvények). 4) Abszolút minősített többség: összes képviselő 2/3 (Alaptörvény módosítása)." },
+            { "front": "Mi a mentelmi jog két eleme?", "back": "1) Felelőtlenség: a képviselő nem vonható felelősségre a parlamenti munkája során közöltekért (kivéve rágalmazás, becsületsértés). 2) Sérthetetlenség: büntető-, szabálysértési, fegyelmi eljárás csak az Országgyűlés mentelmi jog felfüggesztése után." },
+            { "front": "Hogyan választják a miniszterelnököt?", "back": "Az Országgyűlés választja a köztársasági elnök javaslatára, abszolút többséggel (összes képviselő több mint fele). Megbízatása az új OGY megalakulásával, konstruktív bizalmatlansági indítvánnyal, sikertelen bizalmi szavazással, lemondással, halállal stb. szűnik meg." },
+            { "front": "Mi a konstruktív bizalmatlansági indítvány?", "back": "A képviselők egyötöde írásban benyújthatja az új miniszterelnök-jelölt megnevezésével együtt. Ha az OGY elfogadja: bukik a miniszterelnök, és egyúttal megválasztják az újat. Cél a kormányzati stabilitás biztosítása." },
+            { "front": "Mik a köztársasági elnökre vonatkozó alapfeltételek?", "back": "Magyar állampolgár, betöltötte a 35. életévét. Az OGY abszolút minősített többséggel (összes képviselő 2/3) választja, 5 évre. Legfeljebb egyszer újraválasztható. Jelölés: legalább 1/5 képviselő ajánlása." },
+            { "front": "Mely négy szintű a magyar bíróságok rendszere?", "back": "1) Járásbíróság, 2) törvényszék, 3) ítélőtábla, 4) Kúria (legfelső bírói szerv). A bírókat a köztársasági elnök nevezi ki. Hivatásos bíróvá: 35. életévét betöltött magyar állampolgár nevezhető ki." },
+            { "front": "Hogyan választják a Kúria és az OBH elnökét?", "back": "Az Országgyűlés választja, kétharmados többséggel, 9 évre. (A Kúria a legfelsőbb bírói szerv, az OBH = Országos Bírósági Hivatal a bíróságok igazgatási szerve.)" },
+            { "front": "Mi az Alkotmánybíróság szerepe és hogyan választják tagjait?", "back": "Az Alaptörvény védelmének legfőbb szerve. Nem része a bírósági szervezetrendszernek. 15 tag, 12 év, OGY 2/3-os többséggel választ. Hatáskörök: előzetes/utólagos normakontroll, alkotmányjogi panasz, jogszabály megsemmisítése ('negatív jogalkotó')." },
+            { "front": "Hogyan nevezik ki a legfőbb ügyészt?", "back": "Az Országgyűlés választja a köztársasági elnök javaslatára, kétharmados többséggel, 9 évre. Az ügyészség centralizált, hierarchikus szervezet: Legfőbb Ügyészség → fellebbviteli főügyészségek → főügyészségek → járási ügyészségek." }
+          ],
+          "context": "Országgyűlés: 199 képviselő (106 egyéni + 93 listás), 4 évre, vegyes rendszer, 5% küszöb. Szavazástípusok: egyszerű (jelenlévők >50%), abszolút (összes >50%, pl. miniszterelnök), minősített (jelenlévők 2/3, sarkalatos törvények), abszolút minősített (összes 2/3, Alaptörvény-módosítás). Mentelmi jog: felelőtlenség + sérthetetlenség. Miniszterelnököt OGY választja KE javaslatára abszolút többséggel; konstruktív bizalmatlansági indítvány: 1/5 képviselő kezdeményezi új MK-jelölttel. Köztársasági elnök: 35 év, 5 év, max 1× újraválaszt, abszolút minősített többség, jelöléshez 1/5 ajánlás. Bíróságok 4 szint: járásbíróság-törvényszék-ítélőtábla-Kúria. Kúria és OBH elnöke: OGY 2/3, 9 év. Hivatásos bíró: 35 év, KE nevezi ki. AB: Alaptörvény legfőbb védelme, 15 tag, 12 év, 2/3 választott. Legfőbb ügyész: OGY 2/3, 9 év. Alapvető jogok biztosa: OGY 2/3, 6 év."
+        },
+        {
+          "id": "1.3",
+          "name": "Jogi szabályozás",
+          "cards": [
+            { "front": "Mi a jogforrási hierarchia sorrendje?", "back": "1) Alaptörvény, 2) sarkalatos törvény, 3) törvény ('feles törvény'), 4) kormányrendelet, 5) miniszterelnöki rendelet, 6) miniszteri rendelet, 7) MNB elnök, NMHH elnök, ÖM-elnök rendeletei, 8) önkormányzati rendelet." },
+            { "front": "Mi a sarkalatos törvény?", "back": "Olyan törvény, amelynek elfogadásához és módosításához a jelenlévő országgyűlési képviselők kétharmadának szavazata szükséges. Az Alaptörvény jelöli ki, melyek ezek (pl. választási törvény, Alkotmánybíróságról szóló törvény)." },
+            { "front": "Hogyan módosítható az Alaptörvény?", "back": "Csak az Országgyűlés módosíthatja, az összes képviselő kétharmadának szavazatával (abszolút minősített többség). Ez a legszigorúbb szavazási követelmény." },
+            { "front": "Mi a különleges jogrend?", "back": "Az Alaptörvény szerinti minősített helyzet, amelyben a Kormány vagy más szerv különleges jogalkotási jogkörrel rendelkezik. Esetei: hadiállapot, szükségállapot, veszélyhelyzet. Ekkor egyes alapjogok korlátozhatók." },
+            { "front": "Mi a normatív határozat és a normatív utasítás?", "back": "Közjogi szervezetszabályozó eszközök – nem jogszabályok! Normatív határozat: az OGY, Kormány, AB, AB stb. saját szervezetére, működésére vonatkozóan. Normatív utasítás: miniszter, vezető irányítása alá tartozóknak. Csak a kibocsátóra és az alárendeltekre kötelező." },
+            { "front": "Mi a kormányrendelet és ki adja ki?", "back": "A Kormány által törvényi felhatalmazás vagy eredeti jogalkotói hatáskörben kibocsátott jogszabály. Nem lehet ellentétes törvénnyel. A Magyar Közlönyben kihirdetett formában lép hatályba." },
+            { "front": "Mi a viszony az EU-jog és a magyar jog között?", "back": "Magyarország 2004. május 1-je óta tagja az EU-nak. Az uniós jog – meghatározott kereteken belül – elsőbbséget élvez a nemzeti joggal szemben (közvetlen hatály, közvetlen alkalmazhatóság, elsőbbség elve). Az Alaptörvény E) cikke szabályozza." }
+          ],
+          "context": "Jogforrási hierarchia: Alaptörvény (legmagasabb) > sarkalatos törvény (jelenlévők 2/3) > törvény (egyszerű többség) > kormányrendelet > miniszterelnöki rendelet > miniszteri rendelet > MNB/NMHH/ÖM elnöki rendelet > önkormányzati rendelet. Alaptörvény módosítása: összes képviselő 2/3 (abszolút minősített). Különleges jogrend: hadiállapot, szükségállapot, veszélyhelyzet – Kormány különleges jogalkotási jogkörrel; egyes alapjogok korlátozhatók. Közjogi szervezetszabályozó eszközök (NEM jogszabály!): normatív határozat (OGY, Kormány stb.) és normatív utasítás (miniszter stb.). Csak a kibocsátóra és alárendeltekre kötelező. EU-jog Magyarországon: közvetlen hatály, elsőbbség (Alaptörvény E) cikke). Jogszabályok kihirdetése a Magyar Közlönyben. Hatályba lépés: kihirdetést követő nap, vagy később megjelölt napon."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Közigazgatási alapismeretek",
+      "icon": "🏛️",
+      "color": "#43e97b",
+      "submodules": [
+        {
+          "id": "2.1",
+          "name": "Közigazgatás intézményrendszere",
+          "cards": [
+            { "front": "Mi a különbség igazgatás és közigazgatás között?", "back": "Igazgatás: bármilyen szervezett emberi tevékenység irányítása (magán is). Közigazgatás: az állam vagy önkormányzat által, közhatalmi jelleggel, közfeladatok ellátására végzett tevékenység. A közigazgatás az igazgatás közhatalmú alesete." },
+            { "front": "Mik a központi közigazgatás fő szervei?", "back": "1) Kormány (csúcsszerv), 2) miniszterelnök és miniszterek, 3) minisztériumok, 4) Miniszterelnöki Kabinetiroda, Miniszterelnökség, 5) önálló szabályozó szervek (pl. NMHH, MEKH), 6) kormányzati főhivatalok, 7) központi hivatalok, 8) rendvédelmi és nemzetbiztonsági szervek." },
+            { "front": "Mik a területi (helyi-területi) szervek?", "back": "Fővárosi és Megyei Kormányhivatalok – a Kormány általános hatáskörű területi államigazgatási szervei. Vezetőjük a kormánymegbízott (kormánytagok). Alattuk járási hivatalok és kerületi hivatalok működnek (Budapesten kerületi)." },
+            { "front": "Mik a helyi önkormányzat szervei?", "back": "1) Képviselő-testület (döntéshozó), 2) polgármester (végrehajtó), 3) jegyző (a hivatal vezetője), 4) bizottságok, 5) polgármesteri hivatal/közös önkormányzati hivatal." },
+            { "front": "Mik a képviselő-testület átruházhatatlan hatáskörei?", "back": "Pl. helyi rendelet alkotása, szervezeti és működési szabályzat, költségvetés és zárszámadás elfogadása, helyi adók megállapítása, gazdasági program elfogadása, polgármester illetményének megállapítása, hitelfelvétel. Ezek nem ruházhatók át bizottságra/polgármesterre." },
+            { "front": "Mi a polgármester szerepe?", "back": "Az önkormányzat törvényes képviselője, vezeti a képviselő-testület üléseit. Felelős a települési önkormányzat egészéért. Általános választáson, közvetlenül választják 5 évre. Vezeti a polgármesteri hivatalt (a jegyző útján)." },
+            { "front": "Mi a jegyző feladata?", "back": "A polgármesteri hivatal vezetője. Gondoskodik az önkormányzat működésével kapcsolatos feladatok ellátásáról, a hivatal irányítása. Köztisztviselő, szakmai vezető. Ellátja a hatósági államigazgatási feladatokat is. Részt vesz a képviselő-testület ülésén." },
+            { "front": "Mi az önálló szabályozó szerv?", "back": "Csak törvénnyel hozható létre. Vezetője a Kormánytól független. Pl. Nemzeti Média- és Hírközlési Hatóság (NMHH), Magyar Energetikai és Közmű-szabályozási Hivatal (MEKH), Szabályozott Tevékenységek Felügyeleti Hatósága (SZTFH)." }
+          ],
+          "context": "Közigazgatás: állami/önkormányzati közhatalmi tevékenység. Központi szervek: Kormány (csúcsszerv), minisztériumok, MK Kabinetiroda, Miniszterelnökség, önálló szabályozó szervek (csak törvénnyel: NMHH, MEKH, SZTFH), kormányzati főhivatalok, központi hivatalok, rendvédelmi és nemzetbiztonsági szervek. Területi szervek: Fővárosi és Megyei Kormányhivatal (vezető: kormánymegbízott). Alattuk: járási, kerületi hivatalok. Helyi önkormányzatok: képviselő-testület (döntéshozó) + polgármester (végrehajtó, közvetlen választás 5 évre) + jegyző (hivatal vezetője, köztisztviselő). Átruházhatatlan testületi hatáskörök: helyi rendelet, SzMSz, költségvetés, zárszámadás, helyi adók, gazdasági program, polgármester illetménye, hitelfelvétel. Polgármester: törvényes képviselő, ülésvezetés. Jegyző: szakmai vezető, hatósági feladatok, részt vesz testületi üléseken."
+        },
+        {
+          "id": "2.2",
+          "name": "Közszolgálat",
+          "cards": [
+            { "front": "Mi a Kit. és kikre vonatkozik?", "back": "Kit. = 2018. évi CXXV. törvény a kormányzati igazgatásról. Kormánytisztviselők szabályozása – akik a Kormány irányítása alá tartozó szerveknél dolgoznak (minisztériumok, kormányhivatalok, központi hivatalok)." },
+            { "front": "Mi a Kttv. és kikre vonatkozik?", "back": "Kttv. = 2011. évi CXCIX. törvény a közszolgálati tisztviselőkről. Köztisztviselők szabályozása – főleg helyi önkormányzati hivatalok dolgozói. Az önkormányzati hivatalokra vonatkozik elsősorban." },
+            { "front": "Mi a Küt. és kikre vonatkozik?", "back": "Küt. = 2019. évi CVII. törvény a különleges jogállású szervekről. A különleges jogállású szervek (pl. AB Hivatala, NMHH, KEH) köztisztviselőire vonatkozik. Új vívmánya: közszolgálati munkaszerződés (rugalmasabb)." },
+            { "front": "Hogyan jön létre a közszolgálati jogviszony?", "back": "Kinevezéssel és annak elfogadásával, valamint eskütétellel. Próbaidő: 3-6 hónap. A jogviszony határozatlan idejű (kivéve helyettesítés, adott feladatra szóló kinevezés). Az alkalmazási feltételek között: magyar állampolgárság (egyes esetek kivételével), büntetlen előélet, feladatkörnek megfelelő iskolai végzettség." },
+            { "front": "Mennyi a tisztviselő munkaideje?", "back": "Napi 8 óra, heti 40 óra. Heti pihenőidő: legalább 48 óra (2 nap). A rendkívüli munkavégzés elrendelhető évente legfeljebb 400 órában." },
+            { "front": "Hogyan történik a teljesítményértékelés?", "back": "Évente kötelező, a tárgyév első félévében értékelik az előző évet. Minősítések: 'Kiváló', 'Megfelelő', 'Nem megfelelő'. A 'Nem megfelelő' minősítés alapja lehet a jogviszony megszüntetésének (érdemtelenség)." },
+            { "front": "Mi az összeférhetetlenség lényege a közszolgálatban?", "back": "Olyan tevékenység/jogviszony tilalma, amely ellentétes a közszolgálati funkcióval. Tilalmak: pártban tisztség, képviselőjelöltség (egyes esetek), gazdasági társaságban vezetői tisztség, párhuzamos munkavégzés bejelentési kötelezettséggel. A felmerülő összeférhetetlenséget meg kell szüntetni." },
+            { "front": "Mit jelent a közszolgálati munkaszerződés?", "back": "A Küt. új vívmánya. A Sándor-palota, AB Hivatala, MEKH, NMHH, SZTFH, GVH, OAH, IH, KH, EUTAF, Szuverenitásvédelmi Hivatal köztisztviselői esetén. A felek szabadon állapodhatnak meg illetményről, juttatásokról, pótszabadságról, munkaidőről. Rugalmasabb, mint a klasszikus kinevezés." }
+          ],
+          "context": "Három közszolgálati törvény: Kit. (2018. évi CXXV. – kormánytisztviselők, kormány irányítása alá tartozó szervek), Kttv. (2011. évi CXCIX. – köztisztviselők, önkormányzati hivatalok), Küt. (2019. évi CVII. – különleges jogállású szervek köztisztviselői: AB Hivatala, NMHH, MEKH, SZTFH, GVH, OAH, KEH, IH, KH, EUTAF, Szuverenitásvédelmi Hivatal). Közszolgálati jogviszony: kinevezés + elfogadás + eskütétel. Próbaidő 3-6 hónap. Alkalmazási feltétel: magyar állampolgárság (kivételekkel), büntetlen előélet, megfelelő iskolai végzettség. Munkaidő: napi 8h, heti 40h. Pihenőidő: heti min. 48h. Rendkívüli munka: max. 400 óra/év. Teljesítményértékelés: évente kötelező, minősítések: Kiváló/Megfelelő/Nem megfelelő. Nem megfelelő → érdemtelenség (felmentési ok). Összeférhetetlenség: pártban tisztség, gazdasági társaság vezetése, párhuzamos foglalkoztatás bejelentési köt. Küt. különlegessége: közszolgálati munkaszerződés (rugalmasabb feltételek)."
+        },
+        {
+          "id": "2.3",
+          "name": "Közszolgálati hivatásetika",
+          "cards": [
+            { "front": "Mi az etika és hivatásetika?", "back": "Etika (görög éthosz = jellem): a filozófiának az erkölccsel foglalkozó ága. Hivatásetika: a közszolgálati tisztviselőknek mindennapi munkájuk során követendő etikai előírások, értékek, elvek és normák összessége (írott és íratlan szabályok)." },
+            { "front": "Mi a hivatásetikai kódex 3 funkciója?", "back": "1) Szabályozás: erkölcsi magatartási szabályok rögzítése. 2) Tájékoztatás: a nyilvánosság tájékoztatása az elvárható tisztviselői magatartásról. 3) Védelem: a visszaélésekkel, önkényes munkáltatói intézkedésekkel, megalapozatlan felelősségre vonással szemben." },
+            { "front": "Mi a négy fő érték a közszolgálati hivatásetikában?", "back": "1) Demokratikus érték: közérdek szolgálata. 2) Szakmai érték: felkészültség, kiválóság, hatékonyság, pártatlanság. 3) Erkölcsi érték: közbizalom fenntartása, példaértékű magatartás. 4) Emberi tisztesség: tisztelet polgárokkal és munkatársakkal szemben." },
+            { "front": "Mi a korrupció definíciója?", "back": "Olyan magatartás, amely valamely vagyoni vagy nem vagyoni előnyért cserébe a közhivatali kötelességek megsértésével jár. Megnyilvánulási formái: vesztegetés, befolyással üzérkedés, hűtlen kezelés, hivatali visszaélés." },
+            { "front": "Mi a GRECO?", "back": "Group of States against Corruption (Államok Korrupcióellenes Csoportja). Az Európa Tanács antikorrupciós szerve. Tagállamok korrupcióellenes intézkedéseit értékeli, ajánlásokat fogalmaz meg. Magyarország rendszeresen részt vesz az értékelési ciklusokban." },
+            { "front": "Mi az integritás fogalma a közszolgálatban?", "back": "Integritás: feddhetetlenség, sértetlenség, a szervezet/személy értékeinek és működésének összhangja. A közszolgálatban azt jelenti, hogy a szervezet és tisztviselője a meghatározott értékekkel összhangban, átláthatóan, elszámoltathatóan, hatékonyan működik." },
+            { "front": "Mi az integritástanácsadó szerepe?", "back": "Az adott államigazgatási szerv vezetőjének közvetlen alárendeltségében működő tisztviselő. Feladatai: korrupciós kockázatok feltérképezése, integritásirányítási rendszer fejlesztése, etikai bejelentések kezelése, képzés, felvilágosítás. Kötelező a központi államigazgatási szerveknél." }
+          ],
+          "context": "Etika (görög éthosz): erkölcs tudománya. Hivatásetika: tisztviselők magatartási normái, írott és íratlan szabályai. Hivatásetikai kódexek 3 funkciója: szabályozás, tájékoztatás, védelem. Közszolgálati értékek: demokratikus (közérdek), szakmai (felkészültség, hatékonyság, pártatlanság), erkölcsi (közbizalom, példaértékű magatartás), emberi (tisztelet). Korrupció: vagyoni/nem vagyoni előnyért közhivatali kötelességszegés. Formái: vesztegetés, befolyással üzérkedés, hűtlen kezelés. GRECO: Európa Tanács antikorrupciós szerve (Group of States against Corruption). Mérési módszerek: Transparency International CPI, Eurobarometer, GCB. Integritás: feddhetetlenség, értékek és működés összhangja. Integritástanácsadó: kötelező központi áig. szerveknél, közvetlen vezetői alárendelt; feladatai: kockázatfeltárás, irányítási rendszer, etikai ügyek, képzés. ENSZ, EU, ET ajánlások keretet adnak."
+        },
+        {
+          "id": "2.4",
+          "name": "Közigazgatási jogalkalmazás",
+          "cards": [
+            { "front": "Mi az Ákr. és mikor lépett hatályba?", "back": "Általános közigazgatási rendtartásról szóló 2016. évi CL. törvény. Hatályos 2018. január 1-jétől. Korábban a Ket. (2004. évi CXL.) volt érvényben. Az Ákr. szabályozza a hatósági eljárás általános szabályait." },
+            { "front": "Mik az Ákr. alapelvei?", "back": "1) Törvényesség, 2) hivatalbóliság, 3) hatékonyság (gyorsaság), 4) ügyfél jóhiszemű eljárása, 5) jóhiszeműen szerzett és gyakorolt jogok védelme (bizalomvédelem), 6) tisztességes ügyintézéshez való jog, 7) a tényállás teljes felderítése." },
+            { "front": "Mi a különbség a határozat és a végzés között?", "back": "Határozat: az ügy érdemében hozott döntés (pl. engedély megadása/elutasítása). Végzés: az eljárás során a tárgyaláson kívüli kérdésekben hozott döntés (pl. eljárás felfüggesztése, szakértő kirendelése). Mindkettő ellen jogorvoslat lehetséges." },
+            { "front": "Mi az ügyintézési határidő főszabálya?", "back": "Az általános ügyintézési határidő 30 nap (sommás eljárásban 8 nap, automatikus döntéshozatalban 24 óra). Egyszer meghosszabbítható a hatóság vezetője által 30 nappal. Az ügyfelet írásban értesíteni kell a hosszabbításról." },
+            { "front": "Milyen jogorvoslati lehetőségek vannak?", "back": "1) Fellebbezés (ha a törvény megengedi, főszabály szerint nem). 2) Közigazgatási bírósági felülvizsgálat (közigazgatási per a közigazgatási bíróság előtt). 3) Újrafelvételi eljárás. 4) Felügyeleti eljárás. 5) Ügyészi felhívás." },
+            { "front": "Mi a sommás eljárás?", "back": "Egyszerűsített, gyorsított eljárás: 8 napos határidő. Akkor alkalmazható, ha minden adat rendelkezésre áll, az ügy egyszerű, és nem kell mérlegelési jogkört gyakorolni. Ha a feltételek nem teljesülnek, automatikusan teljes eljárássá alakul." },
+            { "front": "Mi az ügyfél fogalma?", "back": "Az a természetes vagy jogi személy, akinek a jogát vagy jogos érdekét az ügy érinti, akit hatósági nyilvántartás tartalmaz, akit a hatóság ellenőrzése alá von. Az ügyfél jogai: irat-betekintés, nyilatkozattétel, jogorvoslat." }
+          ],
+          "context": "Ákr. = 2016. évi CL. törvény az általános közigazgatási rendtartásról, hatályos 2018. január 1-től. Felváltotta a Ket.-t (2004. évi CXL.). Alapelvek: törvényesség, hivatalbóliság, hatékonyság, ügyfél jóhiszemű eljárása, bizalomvédelem (jóhiszeműen szerzett jogok), tisztességes ügyintézés, tényállás teljes felderítése. Döntések: határozat (érdemi) és végzés (eljárási kérdés). Ügyintézési határidők: általános 30 nap (1× 30 nappal meghosszabbítható), sommás 8 nap (egyszerű ügy), automatikus 24 óra. Jogorvoslat: fellebbezés (csak ha törvény engedi), közigazgatási bírósági felülvizsgálat (közigazgatási per), újrafelvétel, felügyeleti eljárás, ügyészi felhívás. Ügyfél: természetes/jogi személy, akinek jogát/érdekét érinti az ügy. Sommás eljárás: gyorsított, 8 nap, ha minden adat rendelkezésre áll."
+        },
+        {
+          "id": "2.5",
+          "name": "Közigazgatás-fejlesztési stratégia",
+          "cards": [
+            { "front": "Mi a Magyary Zoltán Program?", "back": "2011-ben indított, 2012-ben aktualizált közigazgatás-fejlesztési program. Magyary Zoltán (1888-1945) magyar közigazgatástudós nevét viseli. Célok: hatékony, eredményes, átlátható, ellenőrzött, ügyfélbarát közigazgatás. A 'Jó Állam' koncepció megalapozója." },
+            { "front": "Mi a Jó Állam koncepció?", "back": "A magyar közigazgatás-fejlesztés vezérelve. A 'Jó Állam' eredményesen, hatékonyan, demokratikusan és átláthatóan működik. Mérési rendszere a Jó Állam Jelentés (NKE), amely 6 dimenzióban értékel: biztonság, közösség, jólét, fenntarthatóság, demokrácia, hatékony közigazgatás." },
+            { "front": "Mi a stratégiai dokumentumok hierarchiája?", "back": "1) Hosszú távú: 10+ év (víziók, jövőképek). 2) Közép távú: 5-10 év (kormányprogramok, ágazati stratégiák). 3) Rövid távú: 1-3 év (cselekvési tervek, intézkedési tervek). A stratégiát programmá, programot projektté kell konkretizálni." },
+            { "front": "Mi a SMART célmegfogalmazás?", "back": "A célok legyenek: Specific (konkrét), Measurable (mérhető), Achievable (elérhető), Relevant (releváns), Time-bound (időhatáros). A közigazgatás-fejlesztési stratégia megalkotásakor minden célt SMART módon kell megfogalmazni." },
+            { "front": "Mi a Digitális Állam (Digitális Állampolgárság Program) lényege?", "back": "A magyar e-közigazgatás új generációja. Az állampolgár egyetlen digitális személyazonossággal bárhol intézheti ügyeit. Ügyfélkapu+, eSzemélyi, mobilalkalmazás (DÁP). Cél: papírmentes, automatizált közigazgatás 2025-2030 között." },
+            { "front": "Mik a Jó Állam Jelentés dimenziói?", "back": "1) Biztonság és bizalom a kormányzatban, 2) közösségi jóllét, 3) pénzügyi-gazdasági stabilitás, 4) fenntarthatóság, 5) demokrácia, 6) hatékony közigazgatás. Az NKE évente publikálja, alapja a kormányzati teljesítmény értékelésének." }
+          ],
+          "context": "Magyary Zoltán Program (2011, 2012-ben aktualizált): közigazgatás-fejlesztési stratégia, Magyary Zoltán (1888-1945) közigazgatástudós nevét viseli. Cél: hatékony, eredményes, átlátható, ellenőrzött, ügyfélbarát közigazgatás. Jó Állam koncepció: eredményes, hatékony, demokratikus, átlátható közigazgatás. Jó Állam Jelentés (NKE évente): 6 dimenzió – biztonság, közösség, jólét, fenntarthatóság, demokrácia, hatékony közigazgatás. Stratégia hierarchia: hosszú távú (10+ év, víziók), közép (5-10 év, kormányprogramok), rövid (1-3 év, cselekvési tervek). SMART célok: Specific, Measurable, Achievable, Relevant, Time-bound. Digitális Állampolgárság Program (DÁP): egyetlen digitális személyazonosság, Ügyfélkapu+, eSzemélyi, mobilalkalmazás. Cél: papírmentes közigazgatás 2025-2030."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Európai uniós alapismeretek",
+      "icon": "🇪🇺",
+      "color": "#003399",
+      "submodules": [
+        {
+          "id": "3.1",
+          "name": "EU fejlődése és intézményrendszere",
+          "cards": [
+            { "front": "Mi volt az ESZAK és mikor jött létre?", "back": "Európai Szén- és Acélközösség. 1951-ben Párizsban írták alá a szerződést, hatályba 1952-ben lépett. Alapító tagok: Franciaország, NSZK, Olaszország, Belgium, Hollandia, Luxemburg ('a Hatok'). Cél: szén- és acélpiac integrációja, Robert Schuman terve." },
+            { "front": "Mit hozott létre a Római Szerződés (1957)?", "back": "Az Európai Gazdasági Közösséget (EGK) és az Európai Atomenergia Közösséget (Euratom). 1958. január 1-jén lépett hatályba. Cél: közös piac, vámunió. A Hatok írták alá. Alapja a mai Európai Unió gazdasági integrációjának." },
+            { "front": "Mit hozott létre a Maastrichti Szerződés (1992)?", "back": "Az Európai Uniót (EU). Hatályba lépett: 1993. november 1. Bevezette a 3 pillérű struktúrát: 1) Európai Közösségek (gazdasági), 2) közös kül- és biztonságpolitika (KKBP), 3) bel- és igazságügy (B&IÜ). Megalapozta a közös valutát (eurót)." },
+            { "front": "Mi a Lisszaboni Szerződés és mikor lépett hatályba?", "back": "2007-ben írták alá Lisszabonban, 2009. december 1-jén lépett hatályba. Megszüntette a 3 pilléres rendszert. Bevezette: állandó Európai Tanács-elnök (2,5+2,5 év), külügyi főképviselő, polgári kezdeményezés (1 millió aláírás 7 tagállamból), 50. cikk (kilépési klauzula)." },
+            { "front": "Mi az Európai Tanács szerepe?", "back": "Az állam- és kormányfők testülete. NEM jogalkotó! Politikai iránymutatást ad az EU-nak. Évente legalább kétszer ülésezik. Vezeti az állandó Európai Tanács-elnök (2,5 + 2,5 évre). Charles Michel után António Costa a jelenlegi elnök." },
+            { "front": "Mi az EU Tanács (Miniszterek Tanácsa)?", "back": "Tagállami miniszterekből áll (téma szerint változó összetételben). FŐ JOGALKOTÓ szerv az EP-vel együtt. Forgó elnökség: 6 hónap, ABC sorrendben váltják egymást a tagállamok. Döntéshozatal: minősített többség, egyhangúság (érzékeny területeken)." },
+            { "front": "Hány képviselő van az Európai Parlamentben?", "back": "720 képviselő (2024-től, korábban 705). 5 évre, közvetlenül választják az EU-polgárok. Magyarország 21 képviselőt küld. Bizottság megbuktatása: kétharmados többség. Társjogalkotó az EU Tanáccsal." },
+            { "front": "Hogyan épül fel az Európai Bizottság?", "back": "Tagállamonként 1 biztos (jelenleg 27 fő). 5 évre nevezik ki. Elnököt az Európai Tanács javasolja, az EP választja meg. Funkciók: jogalkotási kezdeményezés (kvázi monopólium), végrehajtási hatáskör, az EU képviselete külföldön." },
+            { "front": "Mi az EUB (Európai Unió Bírósága) szerepe?", "back": "Luxembourgban működik. Két szintű: Bíróság (Court of Justice) + Törvényszék (General Court). Feladatai: EU-jog egységes alkalmazása, előzetes döntéshozatali eljárás (nemzeti bíróságok kérelmére), kötelezettségszegési eljárás (tagállamokkal szemben)." },
+            { "front": "Mikor vezették be az eurót?", "back": "1999. január 1.: könyvelési pénzként. 2002. január 1.: készpénzként (bankjegyek és érmék). Jelenleg 20 euróövezeti tagállam. A pénzügyi politika közös, a fiskális politika tagállami hatáskör." }
+          ],
+          "context": "Európai integráció fő szerződései: 1951 Párizs (ESZAK – Schuman-terv, 6 alapító: F, NSZK, I, B, NL, L). 1957 Róma (EGK + Euratom, hatályba 1958). 1992 Maastricht (EU létrejötte, 3 pillér, hatályba 1993). 1997 Amszterdam, 2001 Nizza. 2007 Lisszabon (hatályba 2009. dec. 1.): pillérek megszűnnek, ET állandó elnök 2,5+2,5 év, külügyi főképviselő, polgári kezdeményezés (1 millió aláírás, 7 tagállam), 50. cikk (kilépés). EU intézmények: Európai Tanács (állam-/kormányfők, NEM jogalkotó, politikai iránymutatás), EU Tanács (Miniszterek Tanácsa, jogalkotó, forgó elnökség 6 hónap), Európai Parlament (720 képviselő 2024-től, 5 év, Bizottság megbuktatása 2/3), Európai Bizottság (tagállamonként 1 biztos, 5 év, elnök ET javaslat, EP választja, jogalkotási kezdeményezés monopóliuma), EUB (Luxemburg, 2 szint: Bíróság + Törvényszék; előzetes döntéshozatal, kötelezettségszegés), Számvevőszék, EKB, EGSZB, RB. Euró: 1999 könyvelési, 2002 készpénz, 20 euróövezeti tagállam."
+        },
+        {
+          "id": "3.2",
+          "name": "EU jogrendszere",
+          "cards": [
+            { "front": "Mik az EU elsődleges jogforrásai?", "back": "1) Alapszerződések (EUSZ, EUMSZ), 2) ezeket módosító szerződések (Lisszabon stb.), 3) csatlakozási szerződések, 4) Alapjogi Charta (kötelező a Lisszaboni Szerződéssel óta), 5) általános jogelvek (EUB ítélkezési gyakorlatából)." },
+            { "front": "Mik az EU másodlagos jogforrásai?", "back": "1) Rendelet (regulation), 2) irányelv (directive), 3) határozat (decision), 4) ajánlás és vélemény (nem kötelező). Az intézmények alkotják az alapszerződések felhatalmazása alapján." },
+            { "front": "Mi a rendelet (EU) jellemzője?", "back": "Általánosan alkalmazandó, teljes egészében kötelező és valamennyi tagállamban közvetlenül alkalmazandó. Tagállami jogalkotás nem szükséges (nem kell átültetni). Pl. GDPR, CPR." },
+            { "front": "Mi az irányelv (EU) jellemzője?", "back": "A célt illetően kötelező a tagállamokra, de a forma és az eszközök megválasztása nemzeti hatáskör. Át kell ültetni a nemzeti jogba a megadott határidőn belül. Át nem ültetés esetén közvetlen hatályú lehet (vertikális)." },
+            { "front": "Mi a határozat (EU) jellemzője?", "back": "Egyedi aktus. Kötelező egészében, csak a címzettjeit illetően kötelező (lehet tagállam, vállalkozás, magánszemély). Pl. egy meghatározott cég állami támogatásának visszafizetésére kötelezés." },
+            { "front": "Mik az EU-jog sajátosságai a nemzeti joghoz képest?", "back": "1) Közvetlen hatály (direct effect): magánszemélyek bíróság előtt hivatkozhatnak rá. 2) Közvetlen alkalmazhatóság (rendeletek): nemzeti átültetés nélkül érvényes. 3) Elsőbbség (primacy): ütközés esetén az uniós jog megelőzi a nemzeti jogot, akár alkotmányos szabályt is." },
+            { "front": "Mi az Alapjogi Charta?", "back": "Az EU alapjogvédelmi katalógusa. 2000-ben hirdették ki Nizzában, a Lisszaboni Szerződéssel (2009) vált jogilag kötelezővé, az alapszerződésekkel azonos rangúvá. 7 fejezet, 54 cikk: méltóság, szabadság, egyenlőség, szolidaritás, polgárság, igazságszolgáltatás, általános rendelkezések." },
+            { "front": "Mi az EJEE és kihez tartozik?", "back": "Emberi Jogok Európai Egyezménye (1950, Róma). Az EURÓPA TANÁCS (Council of Europe) szerződése – NEM az EU! Bírói szerve: Emberi Jogok Európai Bírósága (Strasbourg). Magyarország 1992 óta részese. Szubszidiaritás elve: nemzeti jogorvoslat kimerítése után fordulhat hozzá." }
+          ],
+          "context": "EU jogforrásai: ELSŐDLEGES (alapszerződések EUSZ, EUMSZ; módosító és csatlakozási szerződések; Alapjogi Charta a Lisszaboni Szerződéstől kötelező; általános jogelvek az EUB gyakorlatából). MÁSODLAGOS: rendelet (általánosan alkalmazandó, teljes egészében kötelező, közvetlenül alkalmazandó – nem kell átültetni, pl. GDPR), irányelv (cél kötelező, eszköz szabad – át kell ültetni határidőre), határozat (egyedi, csak címzettre kötelező, lehet tagállam vagy magánszemély), ajánlás és vélemény (nem kötelező). EU-jog sajátosságai: közvetlen hatály (Van Gend en Loos eset), közvetlen alkalmazhatóság (rendeletek), elsőbbség (Costa v ENEL eset, akár alkotmányos szabállyal szemben is). Alapjogi Charta: 2000 Nizza, 2009 Lisszabon óta kötelező, 7 fejezet, 54 cikk (méltóság, szabadság, egyenlőség, szolidaritás, polgárság, igazságszolgáltatás, általános). EJEE (1950 Róma): EURÓPA TANÁCS (NEM EU!) szerződése; Emberi Jogok Európai Bírósága Strasbourgban; szubszidiaritás (nemzeti jogorvoslat kimerítése). EU csatlakozása az EJEE-hez tervben."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Gazdálkodási és pénzügyi alapismeretek",
+      "icon": "💰",
+      "color": "#f9ca24",
+      "submodules": [
+        {
+          "id": "4.1",
+          "name": "Pénzügyi alapismeretek",
+          "cards": [
+            { "front": "Mi a GDP?", "back": "Bruttó Hazai Termék (Gross Domestic Product). Egy ország területén adott időszakban (általában 1 év) megtermelt összes végső termék és szolgáltatás piaci értéke. Méri a gazdaság teljesítményét. GDP/fő: jólét egyik mutatója." },
+            { "front": "Mi a fiskális politika?", "back": "Az állam gazdaságpolitikai eszköze, amely a költségvetésen keresztül érvényesül: állami bevételek (adók) és kiadások (közkiadások) szabályozása révén. Célja: növekedés, foglalkoztatás, ár- és pénzügyi stabilitás. Hazánkban a Pénzügyminisztérium / Nemzetgazdasági Minisztérium feladata." },
+            { "front": "Mi a monetáris politika és mi a célja?", "back": "A jegybank gazdaságpolitikája. Magyarországon: Magyar Nemzeti Bank (MNB). Elsődleges célja: az árstabilitás (alacsony, kiszámítható infláció – 3% célszint). Az MNB cél: 'az árstabilitás elérése és fenntartása'." },
+            { "front": "Mik az MNB monetáris politikai eszközei?", "back": "1) Alapkamat (irányadó kamat): kulcskamat, befolyásolja a piaci kamatokat. 2) Kötelező tartalékráta: a bankok mekkora hányadát kötelesek tartalékolni. 3) Nyíltpiaci műveletek: állampapír-vásárlás/eladás. 4) Refinanszírozás. 5) Devizapiaci műveletek." },
+            { "front": "Mikor vette át az MNB a pénzügyi felügyeletet?", "back": "2013-ban. Korábban a PSZÁF (Pénzügyi Szervezetek Állami Felügyelete) látta el. Azóta az MNB integrált pénzügyi felügyeletet gyakorol bankok, biztosítók, befektetési alapok, tőkepiac felett." },
+            { "front": "Mi a pénzügyi közvetítőrendszer?", "back": "Azok a szervezetek és piacok, amelyek kapcsolatot teremtenek a megtakarítók és a pénzigénylők között. Elemek: bankok, biztosítók, befektetési alapok, nyugdíjpénztárak, értékpapírpiacok, MNB. Felügyeletét az MNB látja el." },
+            { "front": "Mik az állam funkciói a nemzetgazdaságban?", "back": "1) Allokációs (közjavak biztosítása), 2) elosztási/redisztribúciós (jövedelem újraelosztása), 3) stabilizációs (gazdaság stabilitása). Eszközei: költségvetés, jogalkotás, monetáris politika. A piacgazdaság hiányosságait egészíti ki." }
+          ],
+          "context": "GDP: ország területén adott időszakban megtermelt végső termékek és szolgáltatások piaci értéke. GDP/fő jólét mutatója. Fiskális politika: állami bevétel-kiadás (adók, közkiadások) szabályozása; cél: növekedés, foglalkoztatás, stabilitás. Monetáris politika: jegybank politikája. MNB elsődleges célja: ÁRSTABILITÁS (3% inflációs célszint). MNB eszközei: alapkamat (irányadó kamat), kötelező tartalékráta, nyíltpiaci műveletek (állampapír), refinanszírozás, devizapiaci műveletek. 2013-tól MNB integrált pénzügyi felügyelet (átvette a PSZÁF-tól). Pénzügyi közvetítőrendszer: bankok, biztosítók, befektetési alapok, nyugdíjpénztárak, értékpapírpiacok – MNB felügyeli. Állam funkciói gazdaságban: allokációs (közjavak), elosztási/redisztribúciós (jövedelem újraelosztás), stabilizációs (Musgrave-féle hármas funkció). Államadósság, államháztartási hiány: GDP-arányos mutatók. Maastrichti kritériumok: hiány <3% GDP, adósság <60% GDP."
+        },
+        {
+          "id": "4.2",
+          "name": "Államháztartás és költségvetés",
+          "cards": [
+            { "front": "Hogyan épül fel az államháztartás?", "back": "Két alrendszer: 1) KÖZPONTI ALRENDSZER: állami költségvetés + Társadalombiztosítás pénzügyi alapjai (Nyugdíjbiztosítási Alap, Egészségbiztosítási Alap) + Elkülönített állami pénzalapok. 2) HELYI ÖNKORMÁNYZATI ALRENDSZER: önkormányzatok költségvetése." },
+            { "front": "Mik a közbevételek típusai?", "back": "1) Adók: szja, tao, áfa, jövedéki adó, helyi adók. 2) Járulékok: szocho, tb-járulékok. 3) Illetékek (vagyonszerzési, eljárási). 4) Vámok. 5) Bírságok. 6) Közterületek díjai. Legjelentősebb: áfa és szja." },
+            { "front": "Mi a közpénzek 5 alapelve?", "back": "1) Átláthatóság, 2) ellenőrzöttség, 3) célszerűség, 4) hatékonyság, 5) eredményesség. Alaptörvény 39. cikke szerint a közpénzeket nyilvántartani kell, és minden közpénzügyi adat közérdekű adat." },
+            { "front": "Hogyan készül a központi költségvetés?", "back": "1) Nemzetgazdasági Miniszter terjeszti elő a Kormánynak. 2) Kormány elfogadja és benyújtja az Országgyűlésnek. 3) ÁSZ véleményezi. 4) OGY tárgyalja, módosítja. 5) OGY törvényben fogadja el (egyszerű többséggel). 6) ÁSZ ellenőrzi a végrehajtást." },
+            { "front": "Hogyan készül a helyi önkormányzati költségvetés?", "back": "Polgármester előterjeszti, a JEGYZŐ készíti elő. Pénzügyi bizottság véleményezi. A KÉPVISELŐ-TESTÜLET RENDELETBEN fogadja el. A Kormányhivatal törvényességi felügyeletet gyakorol. A zárszámadás is rendelet formájában születik." },
+            { "front": "Mi a nemzeti vagyon?", "back": "Az Alaptörvény 38. cikke szabályozza. Az állam és az önkormányzatok tulajdona. Elemei: állami vagyon (kincstári és üzleti), önkormányzati vagyon. Stratégiai vagyon: tartós állami tulajdonban (pl. termőföld, MOL részvénye). Privatizáció csak törvényi felhatalmazással." },
+            { "front": "Mi az ÁSZ szerepe?", "back": "Állami Számvevőszék – Magyarország legfőbb pénzügyi-gazdasági ellenőrző szerve. Csak az Országgyűlésnek felelős. Elnökét és helyetteseit az OGY választja 2/3-os többséggel, 12 évre. Ellenőrzi: ktgvetést, állami vagyont, közpénzeket, pártokat, helyi önkormányzatokat." },
+            { "front": "Mi a KEHI?", "back": "Kormányzati Ellenőrzési Hivatal. A Kormány belső ellenőrző szerve. A Kormánynak felelős (NEM az OGY-nek, mint az ÁSZ!). Ellenőrzi: minisztériumokat, állami vagyonkezelőket, közbeszerzéseket. A Miniszterelnöki Kabinetiroda alá tartozik." }
+          ],
+          "context": "Államháztartás 2 alrendszer: KÖZPONTI (állami ktgvetés + TB pénzügyi alapok – Nyugdíjbiztosítási Alap, Egészségbiztosítási Alap + elkülönített állami pénzalapok) és HELYI ÖNKORMÁNYZATI. Közbevételek: adók (szja, tao, áfa, jövedéki, helyi adók), járulékok (szocho, tb), illetékek, vámok, bírságok. Közpénzek elvei (Alaptörvény 39. cikk): átláthatóság, ellenőrzöttség, célszerűség, hatékonyság, eredményesség. Központi ktgvetés folyamata: Nemzetgazdasági Miniszter előterjeszt → Kormány → OGY → ÁSZ vélemény → OGY törvényben elfogad (egyszerű többség) → ÁSZ ellenőrzi végrehajtást. Helyi ktgvetés: polgármester előterjeszt, jegyző előkészít, pénzügyi bizottság véleményez, képviselő-testület rendeletben fogad el. Kormányhivatal törvényességi felügyelet. Nemzeti vagyon (Alaptörvény 38. cikk): állami (kincstári + üzleti) + önkormányzati. Stratégiai vagyon tartós állami tulajdonban. Privatizáció csak törvénnyel. ÁSZ: legfőbb pénzügyi ellenőrző szerv, OGY-nek felelős, elnök 2/3-dal, 12 évre. KEHI: Kormánynak felelős, MK Kabinetiroda alá tartozik."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Információbiztonsági és adatvédelmi alapismeretek",
+      "icon": "🔐",
+      "color": "#ff4757",
+      "submodules": [
+        {
+          "id": "5.1",
+          "name": "Adatvédelem",
+          "cards": [
+            { "front": "Mi a GDPR és mikor lépett alkalmazásba?", "back": "Általános Adatvédelmi Rendelet (General Data Protection Regulation), EU 2016/679. 2016-ban fogadták el, 2018. MÁJUS 25-től alkalmazandó az egész EU területén. Közvetlenül alkalmazandó (rendelet), nem kell tagállami átültetés. A magyar Infotv.-vel együtt érvényes." },
+            { "front": "Mi a személyes adat?", "back": "Az azonosított vagy azonosítható természetes személyre vonatkozó BÁRMELY információ. Azonosítható: aki közvetlenül vagy közvetve azonosítható (pl. név, születési hely/idő, lakcím, IP-cím, telefonszám, sőt: arckép, hang)." },
+            { "front": "Mik a 6 adatkezelési jogalap a GDPR szerint?", "back": "1) Hozzájárulás, 2) szerződés teljesítése, 3) jogi kötelezettség teljesítése, 4) létfontosságú érdek védelme, 5) közfeladat ellátása, 6) adatkezelő/harmadik fél jogos érdeke. Legalább egy jogalap szükséges minden adatkezeléshez." },
+            { "front": "Mik az érintett jogai?", "back": "1) Tájékoztatáshoz/hozzáféréshez való jog. 2) Helyesbítés. 3) Törlés ('elfeledtetéshez való jog'). 4) Adatkezelés korlátozása. 5) Adathordozhatóság. 6) Tiltakozás. 7) Automatizált döntéshozatal alóli mentesség (profilalkotás)." },
+            { "front": "Mi a NAIH?", "back": "Nemzeti Adatvédelmi és Információszabadság Hatóság. Független adatvédelmi felügyeleti hatóság. Elnökét a köztársasági elnök nevezi ki 9 évre. Hatáskör: panaszok kivizsgálása, bírság (max. 20 M Ft, GDPR alapján éves árbevétel 4%-a vagy 20 M EUR), adatvédelmi tisztviselő nyilvántartás." },
+            { "front": "Mik a különleges (szenzitív) adatok?", "back": "Faji/etnikai származás, politikai vélemény, vallási/világnézeti meggyőződés, szakszervezeti tagság, genetikai adatok, biometrikus adatok, egészségügyi adatok, szexuális élet/irányultság. Főszabály: KEZELÉSÜK TILOS, kivéve szigorúan meghatározott esetek (pl. érintett kifejezett hozzájárulása, közérdek)." },
+            { "front": "Mi az EU AI Act?", "back": "Az EU 2024/1689 rendelete a mesterséges intelligenciáról. Az első átfogó AI-szabályozás a világon. Kockázatalapú megközelítés: 1) tiltott AI (pl. társadalmi pontozás), 2) magas kockázatú (pl. közigazgatás, oktatás), 3) korlátozott kockázatú, 4) minimális kockázatú. Fokozatos hatálybalépés 2024-2027." },
+            { "front": "Mi az adatvédelmi tisztviselő (DPO)?", "back": "Data Protection Officer. Kötelező alkalmazni: közhatalmi szervezetnél, ha rendszeres és módszeres megfigyelés/különleges adatok kezelése történik. Feladatai: tájékoztatás, képzés, ellenőrzés, NAIH-hal való együttműködés, kapcsolattartó az érintettekkel." }
+          ],
+          "context": "GDPR (EU 2016/679): 2018. május 25-től alkalmazandó EU rendelet, közvetlenül alkalmazandó. Magyar Infotv. kiegészíti. Személyes adat: azonosított/azonosítható természetes személyre vonatkozó bármely információ (név, cím, IP, arckép, hang). Adatkezelési jogalapok (6): hozzájárulás, szerződés, jogi kötelezettség, létfontosságú érdek, közfeladat, jogos érdek. Érintett jogai: tájékoztatás, hozzáférés, helyesbítés, törlés (elfeledtetés), korlátozás, adathordozhatóság, tiltakozás, automatizált döntéshozatal mentesség. NAIH: független felügyeleti hatóság, elnök KE-nevezi 9 évre. Bírság GDPR: max. éves árbevétel 4% vagy 20 M EUR. Különleges adatok: faj/etnikum, politikai vélemény, vallás, szakszervezeti tagság, genetikai, biometrikus, egészség, szexuális irányultság – főszabály: TILOS kezelni. AI Act (EU 2024/1689): első átfogó AI-szabályozás, kockázatalapú: tiltott, magas, korlátozott, minimális kockázat. Fokozatos hatálybalépés 2024-2027. DPO (adatvédelmi tisztviselő): kötelező közhatalmi szervnél, rendszeres megfigyelésnél, különleges adat kezelésénél."
+        },
+        {
+          "id": "5.2",
+          "name": "Információszabadság",
+          "cards": [
+            { "front": "Mi a közérdekű adat?", "back": "Az állami vagy helyi önkormányzati feladatot, valamint jogszabályban meghatározott egyéb közfeladatot ellátó szerv vagy személy kezelésében lévő, és tevékenységére vonatkozó vagy közfeladatának ellátásával összefüggésben keletkezett – nem személyes – adat. Bárki megismerheti." },
+            { "front": "Mi a közérdekből nyilvános adat?", "back": "Nem közérdekű adat, de jogszabály szerint nyilvánosság számára biztosítani kell a megismerhetőségét közérdek miatt. Pl. közfeladatot ellátó vezető tisztviselő javadalmazása, vagyoni nyilatkozata, közbeszerzési pályázatok adatai." },
+            { "front": "Hogy lehet közérdekű adatot megismerni?", "back": "1) Elektronikus közzététel: kötelező közzétételi listák szerint az adatkezelő honlapján. 2) Adatigénylés: bárki kérheti írásban. Határidő: 15 nap (1× 15 nappal hosszabbítható). Ingyenes, kivéve nagy mennyiségű másolat költségtérítés." },
+            { "front": "Mik az információszabadság korlátai?", "back": "1) Minősített adat (államtitok). 2) Üzleti titok. 3) Honvédelmi, nemzetbiztonsági, bűnüldözési érdek. 4) Bírósági/közigazgatási ügyek folyamatban lévő iratai. 5) Döntés-előkészítő iratok 10 évig (mérlegelés alapján). 6) Személyes adat (kivétel: közfeladatot ellátó adatai)." },
+            { "front": "Mik a kötelező közzétételi listák?", "back": "Általános közzétételi lista (Infotv. melléklete): szervezet, működés, gazdálkodás adatai. Különös közzétételi lista: ágazati jogszabályok írják elő. Egyedi közzétételi lista: a szerv saját döntése alapján. Kihelyezve a központi elektronikus tájékoztatási rendszerre is (kozadat.hu)." },
+            { "front": "Ki a felügyeleti hatóság közérdekű adatok ügyében?", "back": "A NAIH (Nemzeti Adatvédelmi és Információszabadság Hatóság). Lefolytat hatósági ellenőrzést, panaszt kivizsgál, hatósági döntést hoz. Ezenkívül a bírósági út is nyitva áll: ha az adatigénylést elutasítják, 30 napon belül perlés lehetséges." }
+          ],
+          "context": "Közérdekű adat: állami/önkormányzati közfeladatot ellátó szerv kezelésében lévő, NEM személyes adat. Bárki megismerheti. Jogi alap: Alaptörvény VI. cikk + Infotv. (2011. évi CXII.). Közérdekből nyilvános adat: nem közérdekű, de jogszabály nyilvánosság számára biztosítja (pl. vezető tisztviselő javadalmazása, közbeszerzés). Megismerés módjai: elektronikus közzététel (kötelező közzétételi listák, kozadat.hu) és adatigénylés (bárki, írásban, 15 nap, 1× 15 nappal hosszabbítható). Általános, különös, egyedi közzétételi lista. Korlátok: minősített adat, üzleti titok, honvédelmi/nemzetbiztonsági érdek, folyamatban lévő ügyek iratai, döntés-előkészítő iratok 10 évig (mérlegelhető), személyes adat. Felügyelet: NAIH. Bírósági út: 30 napon belül perlés, ha elutasítás."
+        },
+        {
+          "id": "5.3",
+          "name": "Információbiztonság",
+          "cards": [
+            { "front": "Mik a minősítési szintek és érvényességi idejük?", "back": "1) Korlátozott terjesztésű ('K'): max. 5 év. 2) Bizalmas ('B'): max. 10 év. 3) Titkos ('T'): max. 20 év. 4) Szigorúan titkos ('SzT'): max. 30 év. Az érvényességi idő meghosszabbítható, ha a védelmi érdek fennáll." },
+            { "front": "Ki minősít és mi a minősítés?", "back": "Minősítés: az a folyamat, amellyel egy adatot védelmi szintre sorolnak. Minősítő: jogszabályban kijelölt személy (pl. miniszterek, országos hatáskörű szervek vezetői). Minősítési jelölés (pl. 'BIZALMAS!') + érvényességi idő + minősítő neve és aláírása." },
+            { "front": "Mi a felülvizsgálat?", "back": "Legalább 5 évente kötelező a minősítő számára. Megvizsgálja, hogy a minősítés indokolt-e még. Eredményei: 1) megtartja a szintet, 2) szintet csökkenti, 3) megszünteti a minősítést, 4) érvényességi időt meghosszabbítja." },
+            { "front": "Mi a felülbírálat?", "back": "Az érintett (akire vonatkozik az adat) vagy NAIH kezdeményezésére indul. A minősítő felettese vizsgálja, hogy jogszabályszerű volt-e a minősítés. Eredménye lehet: minősítés fenntartása vagy megszüntetése. Az érintettnek panaszjoga van." },
+            { "front": "Mik a biztonsági feltétel kategóriák?", "back": "1) Személyi biztonság: nemzetbiztonsági ellenőrzés, felhasználói engedély. 2) Fizikai biztonság: zárt helyiség, beléptető rendszer, riasztó. 3) Adminisztratív biztonság: nyilvántartás, iratkezelés. 4) Elektronikus biztonság: kriptográfia, hozzáférés-kezelés, audit." },
+            { "front": "Mi a telephely biztonsági tanúsítvány?", "back": "TBT – gazdasági szereplők kapják (cégek), akik minősített adatokkal érintkeznek (pl. hadiipari, IT-beszállító). Igazolja, hogy a vállalat alkalmas a minősített adat kezelésére. Kibocsátó: NBSZ (Nemzetbiztonsági Szakszolgálat). Egyszerűsített TBT: kisebb adatkezelés esetén." },
+            { "front": "Ki gyakorol hatósági felügyeletet?", "back": "Nemzeti Biztonsági Felügyelet (NBF) – az Alkotmányvédelmi Hivatal részeként. Feladatai: ellenőrzés, engedélyezés, minősítési incidensek kivizsgálása, nemzetközi kapcsolattartás (NATO, EU). NATO és EU minősített adatokra is kiterjed." },
+            { "front": "Mi a nemzetbiztonsági ellenőrzés?", "back": "Személyi alkalmasság vizsgálata minősített adathoz való hozzáférés előtt. 3 szint: 'C' szintű (Korlátozott), 'B' szintű (Bizalmas-Titkos), 'A' szintű (Szigorúan titkos). NBSZ végzi, érvényessége tipikusan 5 év. Eredmény: 'kockázatmentes', 'kockázat' vagy 'biztonsági kockázat'." }
+          ],
+          "context": "Minősített adatok védelme: 2009. évi CLV. törvény (Mavtv.). Minősítési szintek + érvényességi idő: KORLÁTOZOTT TERJESZTÉSŰ (K) – max. 5 év; BIZALMAS (B) – max. 10 év; TITKOS (T) – max. 20 év; SZIGORÚAN TITKOS (SzT) – max. 30 év. Meghosszabbítható, ha védelmi érdek fennáll. Minősítő: jogszabályban kijelölt (miniszterek, országos szervek vezetői). Minősítési jelölés + érvényességi idő + minősítő. Felülvizsgálat: 5 évente kötelező a minősítő által (fenntart/csökkent/megszüntet/hosszabbít). Felülbírálat: érintett/NAIH kezdeményezésre, felettes vizsgálja jogszerűséget. Biztonsági feltételek 4 kategóriája: SZEMÉLYI (nemzetbiztonsági ellenőrzés, felhasználói engedély), FIZIKAI (zárt helyiség, beléptető), ADMINISZTRATÍV (nyilvántartás, iratkezelés), ELEKTRONIKUS (kriptográfia, hozzáférés). Telephely Biztonsági Tanúsítvány (TBT): cégeknek minősített adat kezelésére, kibocsátó NBSZ. Egyszerűsített TBT kisebb adatra. Nemzeti Biztonsági Felügyelet (NBF, Alkotmányvédelmi Hivatal részeként): hatósági felügyelet, NATO/EU minősített adatokra is. Nemzetbiztonsági ellenőrzés szintjei: C (Korlátozott), B (Bizalmas-Titkos), A (SzT); érvényesség 5 év."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Közigazgatási szervezetek működése",
+      "icon": "⚙️",
+      "color": "#9b59b6",
+      "submodules": [
+        {
+          "id": "6.1",
+          "name": "Szervezetelméleti megközelítés",
+          "cards": [
+            { "front": "Mik Max Weber bürokrácia-elméletének elemei?", "back": "1) Hierarchia (függelmi szervezet), 2) munkamegosztás (specializáció), 3) írásbeliség (akták), 4) személytelenség (objektivitás), 5) szakértelem (képzés alapján), 6) szabályalapú működés. A racionális-legális uralom megtestesítője." },
+            { "front": "Mi Robert Merton 'bürokratikus személyiség' fogalma?", "back": "A bürokrácia diszfunkcionális következménye: a szabályok eszközből céllá válnak. A tisztviselő túlzottan szabálykövető lesz, ezzel hátráltatja a szervezet eredményességét. 'Trained incapacity' (kiképzett alkalmatlanság)." },
+            { "front": "Mi a New Public Management (NPM)?", "back": "1980-as évektől terjedő reformelmélet. A piacgazdasági elvek alkalmazása a közigazgatásban: hatékonyság, eredményesség, ügyfélbarát szolgáltatás, decentralizáció, teljesítmény-mérés, privatizáció. Példa: brit Thatcher-kormány, új-zélandi reformok." },
+            { "front": "Mi a New Public Governance (NPG)?", "back": "2000-es évektől megjelent megközelítés. Hálózati szemlélet: állam, magánszektor, civil szféra partneri együttműködése. Fókusz: együttműködés, párbeszéd, részvétel. Ellenpólusa az NPM piaci szemléletének. Inkább kapcsolatok és értékek, mint piacok és teljesítmény." },
+            { "front": "Mik a közigazgatás környezeti jellemzői?", "back": "1) Politikai környezet (jogalkotás, kormányváltás), 2) gazdasági környezet (költségvetés, GDP), 3) társadalmi környezet (demográfia, oktatás), 4) technológiai környezet (digitalizáció), 5) jogi környezet (alaptörvényi, EU keretek), 6) globális/EU környezet." },
+            { "front": "Mi a 'governance' fogalma?", "back": "Kormányzás (governance) – tágabb fogalom mint a 'government' (kormányzat). Magában foglalja az állami és nem állami szereplők együttműködését a közügyek intézésében. Hálózati, részvételi, többszintű döntéshozatal. EU-jellemző: 'multi-level governance'." }
+          ],
+          "context": "Max Weber bürokrácia: hierarchia, munkamegosztás, írásbeliség, személytelenség, szakértelem, szabályalapúság. Racionális-legális uralom. Robert Merton: bürokratikus személyiség, 'trained incapacity' – szabályok eszközből céllá válnak. Frederick W. Taylor: tudományos vezetés, munkafolyamatok elemzése. Henri Fayol: 5 vezetői funkció (tervezés, szervezés, utasítás, koordináció, ellenőrzés). New Public Management (NPM, 1980-as évek): piaci elvek a közigazgatásban, hatékonyság, ügyfélbarát szolgáltatás, decentralizáció, teljesítmény-mérés, privatizáció. Brit (Thatcher), új-zélandi reformok. New Public Governance (NPG, 2000-es évek): hálózati szemlélet, állam-piac-civil partnerség, együttműködés, részvétel. Governance vs Government: tágabb, nem állami szereplőket is bevon. Multi-level governance EU-jellemző. Közigazgatás környezete: politikai, gazdasági, társadalmi, technológiai, jogi, globális/EU."
+        },
+        {
+          "id": "6.2",
+          "name": "Vezetői feladatok",
+          "cards": [
+            { "front": "Mik a klasszikus vezetői funkciók?", "back": "1) Tervezés (célkijelölés, stratégia), 2) szervezés (struktúra, erőforrás), 3) leadership (személyes vezetés, motiváció), 4) kontroll (ellenőrzés, mérés). Henri Fayol nyomán. Modern szemlélet: stratégiai gondolkodás, változásmenedzsment, kommunikáció hozzáadása." },
+            { "front": "Mi a stratégiaalkotás folyamata?", "back": "1) Helyzetelemzés (SWOT, PESTEL), 2) küldetés (mission), 3) jövőkép (vision), 4) értékek, 5) stratégiai célok, 6) cselekvési tervek, 7) végrehajtás, 8) monitorozás és értékelés. Visszacsatolásos folyamat." },
+            { "front": "Mi a SWOT-elemzés?", "back": "Strengths (erősségek), Weaknesses (gyengeségek), Opportunities (lehetőségek), Threats (veszélyek). Stratégiai tervezési eszköz. A belső (S, W) és külső (O, T) tényezők rendszerezése. Az S és W belső adottság, az O és T környezeti hatás." },
+            { "front": "Mi a leadership és mi a különbsége a menedzsmenttől?", "back": "Leadership (vezetés): emberek motiválása, jövőkép, irány. Management (irányítás): folyamatok, struktúrák, hatékonyság. Egy jó vezető mindkettőt igényli. Kotter: 'A management irányít, a leadership változást indít el.'" },
+            { "front": "Mi a kontroll funkciója?", "back": "1) Tervezett és tényleges teljesítmény összehasonlítása. 2) Eltérések okainak feltárása. 3) Korrekciós beavatkozás. Eszközei: KPI-k (kulcs teljesítménymutatók), beszámolók, audit. Folyamatos visszacsatolás biztosítása." },
+            { "front": "Mi a különbség: irányítás, felügyelet, ellenőrzés?", "back": "IRÁNYÍTÁS (legszélesebb): teljes körű jogosultság – utasítás, szervezés, felügyelet, ellenőrzés, beavatkozás, vezető kinevezés/elmozdítás. FELÜGYELET (szűkebb): nincs utasítási jog, jogszerűség és célszerűség vizsgálata. ELLENŐRZÉS (legszűkebb): csak megfigyelés, értékelés, beavatkozási jog NÉLKÜL." },
+            { "front": "Mik a motivációs elméletek?", "back": "Maslow szükségletpiramis (fiziológiai → biztonság → szociális → elismerés → önmegvalósítás). Herzberg kéttényezős elmélet: higiéniás (jelenléte nem motivál, hiánya elégedetlenség) vs motivátorok (igazi motiváció). McGregor X és Y elmélet (negatív és pozitív emberkép)." }
+          ],
+          "context": "Vezetői funkciók (Fayol nyomán): tervezés (célkijelölés, stratégiaalkotás), szervezés, leadership (személyes vezetés), kontroll. Modern: stratégiai gondolkodás, változásmenedzsment, kommunikáció. Stratégiaalkotás: helyzetelemzés (SWOT, PESTEL) → küldetés → jövőkép → értékek → célok → cselekvési terv → végrehajtás → monitor. SWOT: Strengths-Weaknesses (belső), Opportunities-Threats (külső). PESTEL: Political, Economic, Social, Technological, Environmental, Legal. Leadership vs Management (Kotter): leadership=jövőkép, motiváció, változás; management=struktúra, hatékonyság, folyamat. Motivációs elméletek: Maslow (5 szintű piramis), Herzberg kéttényezős (higiéniás vs motivátor), McGregor X/Y. Kontroll: tervezett-tényleges összehasonlítás, KPI-k, audit. Közigazgatási SAJÁTOSSÁGOK – IRÁNYÍTÁS-FELÜGYELET-ELLENŐRZÉS: irányítás (legtágabb, utasítás+szervezés+felügyelet+ellenőrzés+vezető-kinevezés), felügyelet (szűkebb, jogszerűség-célszerűség, NEM utasít), ellenőrzés (legszűkebb, csak megfigyel-értékel, NEM beavatkozás)."
+        },
+        {
+          "id": "6.3",
+          "name": "Működési folyamatok",
+          "cards": [
+            { "front": "Mi a folyamatmenedzsment?", "back": "A szervezet működésének folyamatok rendszereként való szemlélete. A folyamatok feltárása, modellezése, elemzése, fejlesztése. Cél: hatékonyság, ügyfél-elégedettség. Lépések: feltárás → modellezés → mérés → elemzés → fejlesztés (ismétlődő ciklus)." },
+            { "front": "Mi a BPMN?", "back": "Business Process Model and Notation – üzleti folyamatmodellezés szabványos jelölésrendszere. Grafikus elemek: események (kör), tevékenységek (lekerekített téglalap), átjárók/kapuk (rombusz), úszósávok. Közigazgatási folyamatleírás standardja." },
+            { "front": "Mi a Lean és mi a 8 veszteségtípus?", "back": "Lean: japán (Toyota) eredetű módszertan a veszteségek minimalizálására. 8 MUDA (veszteség): 1) felesleges szállítás, 2) készletek, 3) felesleges mozgás, 4) várakozás, 5) túltermelés, 6) túlfeldolgozás, 7) hibák, 8) kihasználatlan tehetség. Közigazgatási Lean: papírmunka, ügyintézési idő csökkentése." },
+            { "front": "Mi az e-közigazgatás 4 szintje?", "back": "1) Tájékoztatás (információ közzététele). 2) Egyirányú interakció (űrlap letöltés). 3) Kétirányú interakció (űrlap online kitöltés-küldés). 4) Tranzakció (teljes online ügyintézés, fizetéssel). 5+) Proaktív szolgáltatások (állam előre jelez, automatikus döntés)." },
+            { "front": "Mi az Ügyfélkapu és Ügyfélkapu+?", "back": "Ügyfélkapu: a magyar e-közigazgatás központi azonosítási rendszere, 2005 óta. Ügyfélkapu+: 2024-től bevezetett kétfaktoros (jelszó + mobilalkalmazás kód). 2025-től kötelező a régi (csak jelszavas) helyett. Cél: erősebb biztonság." },
+            { "front": "Mi a SZEÜSZ?", "back": "Szabályozott Elektronikus Ügyintézési Szolgáltatások. Az e-közigazgatás központi szolgáltatásai: pl. elektronikus aláírás, kézbesítés, fizetés, azonosítás. NISZ üzemelteti. Cél: egységes, biztonságos elektronikus ügyintézés." },
+            { "front": "Mi a Digitális Állampolgárság Program (DÁP)?", "back": "2024-től induló program. Egyetlen digitális személyazonossággal és mobilalkalmazással bárhol intézhető a közigazgatási ügy. Komponensek: DÁP mobilalkalmazás, eSzemélyi kártya, digitális aláírás, központi ügyintézési felület. Cél: papírmentes közigazgatás." } 
+          ],
+          "context": "Folyamatmenedzsment: szervezetet folyamatok rendszereként szemléli; feltárás-modellezés-mérés-elemzés-fejlesztés ciklus. BPMN (Business Process Model and Notation): grafikus standard – események (kör), tevékenységek (lekerekített téglalap), átjárók (rombusz), úszósávok. Lean (Toyota, japán): veszteségek (MUDA) minimalizálása. 8 MUDA: szállítás, készlet, mozgás, várakozás, túltermelés, túlfeldolgozás, hibák, kihasználatlan tehetség. E-közigazgatás szintjei: tájékoztatás, egyirányú interakció, kétirányú interakció, tranzakció, proaktív szolgáltatás. Ügyfélkapu (2005-) → Ügyfélkapu+ (2024-, kétfaktoros, 2025-től kötelező). SZEÜSZ: Szabályozott Elektronikus Ügyintézési Szolgáltatások (e-aláírás, kézbesítés, fizetés, azonosítás), NISZ üzemelteti. KEÜSZ: Központi e-ügyintézési szolgáltatások. DÁP (2024-): Digitális Állampolgárság Program – mobilalkalmazás, eSzemélyi, digitális aláírás, központi felület. Cél: papírmentes közigazgatás."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Nemzetpolitika",
+      "icon": "🇭🇺",
+      "color": "#e74c3c",
+      "submodules": [
+        {
+          "id": "7.1",
+          "name": "Elvi keret – egységes magyar nemzet",
+          "cards": [
+            { "front": "Mit mond ki az Alaptörvény D) cikke?", "back": "'Magyarország az egységes magyar nemzet összetartozását szem előtt tartva felelősséget visel a határain kívül élő magyarok sorsáért, elősegíti közösségeik fennmaradását és fejlődését, támogatja magyarságuk megőrzésére irányuló törekvéseiket.' Az egységes magyar nemzet alkotmányos rögzítése." },
+            { "front": "Mi a Nemzeti Összetartozás Napja?", "back": "JÚNIUS 4. – a trianoni békediktátum aláírásának évfordulója (1920. június 4.). A 2010. évi XLV. törvény hozta létre. Az ország- és nemzetegység, a határon túli magyarsággal való összetartozás emléknapja." },
+            { "front": "Mi a Nemzeti Összetartozás melletti tanúságtételről szóló törvény tartalma?", "back": "2010. évi XLV. törvény. A magyar államiság folytonosságát és a nemzeti összetartozás tényét rögzíti. Szerepe: erkölcsi és politikai tanúságtétel a határon túli magyarsággal. A nemzetpolitika alkotmányos és törvényi alapja." }
+          ],
+          "context": "Alaptörvény D) cikk: 'Magyarország az egységes magyar nemzet összetartozását szem előtt tartva felelősséget visel a határain kívül élő magyarok sorsáért.' Az egységes magyar nemzet alkotmányos elve. Nemzeti Összetartozás Napja: június 4. (Trianon évfordulója, 1920). 2010. évi XLV. törvény a Nemzeti Összetartozás melletti tanúságtételről. Alapelvek: kulturális nemzet koncepciója, a határon túli magyarok támogatása, magyar nyelv és kultúra megőrzése. Nemzetpolitikai területek: közoktatás, kultúra, gazdaság, identitás. Felelős állami szerv: Miniszterelnökség Nemzetpolitikai Államtitkárság. A nemzetpolitika alaptörvényi és törvényi keretei adottak."
+        },
+        {
+          "id": "7.2",
+          "name": "Cselekvési területek",
+          "cards": [
+            { "front": "Mi az egyszerűsített honosítás?", "back": "2011. JANUÁR 1-jétől hatályos jogintézmény. Magyar állampolgárságot szerezhet az, aki igazolja, hogy felmenője magyar állampolgár volt vagy magyar nemzetiségéről nyilatkozik, magyar nyelvtudást igazol. NEM SZÜKSÉGES magyarországi lakóhely. Eredménye: kettős állampolgárság." },
+            { "front": "Mi a Bethlen Gábor Alap?", "back": "2010-ben létrehozott központi költségvetési alap. Cél: a határon túli magyarság támogatása. Kezeli: Bethlen Gábor Alapkezelő Zrt. Támogatási területek: oktatás, kultúra, egyházak, civil szervezetek, gazdaságfejlesztés, ifjúság, helyi közösségek." },
+            { "front": "Mi a Határtalanul! program?", "back": "Általános és középiskolásoknak szóló osztálykirándulási program a Kárpát-medence magyarlakta területeire (Erdély, Felvidék, Délvidék, Kárpátalja, Muravidék, Drávaszög, Burgenland). Cél: a fiatalok személyes találkozása a határon túli magyarsággal. Központi költségvetési forrás." },
+            { "front": "Mi a hatékony támogatáspolitika lényege?", "back": "Az állam koordinált, célzott, eredményorientált támogatást nyújt a határon túli magyarságnak. Eszközök: közvetlen pénzügyi támogatás (Bethlen Gábor Alap), oktatási együttműködés, kulturális programok, gazdaságfejlesztés. Az 'Átfogó Gazdaságfejlesztési Program' is ide tartozik." }
+          ],
+          "context": "Egyszerűsített honosítás: 2011. január 1-jétől. Feltétel: magyar felmenő VAGY magyar nemzetiségről nyilatkozat + magyar nyelvtudás. NEM kell magyarországi lakóhely. Eredmény: kettős állampolgárság lehetséges. Bethlen Gábor Alap (2010-): határon túli magyarság támogatása, kezeli Bethlen Gábor Alapkezelő Zrt., területek: oktatás, kultúra, egyházak, civilek, gazdaság. Határtalanul! program: ált. és középiskolás osztálykirándulások a Kárpát-medencei magyarlakta területekre (Erdély, Felvidék, Délvidék, Kárpátalja, Muravidék, Drávaszög, Burgenland), központi ktgvetésből. Átfogó Gazdaságfejlesztési Program: határon túli magyar vállalkozások támogatása. Hatékony támogatáspolitika: koordinált, célzott, eredményorientált; eszközök: pénzügyi támogatás, oktatási együttműködés, kulturális program, gazdaságfejlesztés."
+        },
+        {
+          "id": "7.3",
+          "name": "Magyar–magyar kapcsolattartás",
+          "cards": [
+            { "front": "Mi a MÁÉRT és mikor alapították?", "back": "Magyar Állandó Értekezlet. 1999-ben alapították. Konzultációs, politikai egyeztető fórum a magyar Kormány és a határon túli magyar szervezetek között. Tagjai: parlamenti pártok, határon túli legitim magyar szervezetek képviselői, kormányzati tisztségviselők." },
+            { "front": "Mi a Magyar Diaszpóra Tanács?", "back": "A nyugati (Európán kívüli, Nyugat-európai) diaszpórában élő magyar szervezetek konzultációs fóruma. 2011-ben alapították. Évente ülésezik Budapesten. Cél: a diaszpóra magyarságának összefogása, kapcsolattartás, identitásmegőrzés." },
+            { "front": "Mi a Kárpát-medencei Magyar Képviselők Fóruma (KMKF)?", "back": "A Kárpát-medencei magyarság által választott képviselők fóruma. Magyar és határon túli magyar parlamenti képviselők egyeztető testülete. Cél: parlamenti szintű egyeztetés, közös politikai napirend a Kárpát-medencei magyar érdekekben. Plenáris ülése évente." },
+            { "front": "Mi az Országgyűlés Nemzeti Összetartozás Bizottsága?", "back": "Az Országgyűlés állandó bizottsága. Feladata: a nemzetpolitikai területet érintő törvényhozási munkavégzés, a kapcsolattartás a határon túli magyar szervezetekkel, parlamenti szintű képviselet. Folyamatos kapcsolat a MÁÉRT-tel és más fórumokkal." }
+          ],
+          "context": "Magyar–magyar kapcsolattartás 4 fő intézménye: MÁÉRT (Magyar Állandó Értekezlet, 1999-): konzultációs, politikai fórum a Kormány és határon túli magyar szervezetek között; tagok: parlamenti pártok, határon túli legitim szervezetek, kormánytagok. Magyar Diaszpóra Tanács (2011-): nyugati diaszpóra szervezetei, évente Budapesten ülésezik, identitásmegőrzés cél. KMKF (Kárpát-medencei Magyar Képviselők Fóruma): magyar és határon túli magyar képviselők egyeztető testülete, évente plenáris ülés. Nemzeti Összetartozás Bizottsága: Országgyűlés állandó bizottsága, nemzetpolitikai törvényhozás, kapcsolattartás. Felelős kormányzati szerv: Miniszterelnökség Nemzetpolitikai Államtitkárság. Témák: oktatás, kultúra, egyházak, gazdaság, identitás."
+        }
+      ]
+    }
+  ]
+}
