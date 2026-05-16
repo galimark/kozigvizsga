@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Közigvizsga – Tanulókártyák és kvíz</title>
-<meta name="description" content="Játékos felkészítő a közigazgatási alapvizsgára. 22 almodul, 150+ tanulókártya, AI-generált kvízek.">
+<title>Közigvizsga – Tanulókártyák, kvíz és próbavizsga</title>
+<meta name="description" content="Felkészítő a közigazgatási alapvizsgára. Tanulókártyák a tankönyv alapján, AI-kvíz, valamint 1000+ kérdéses próbavizsga.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -18,8 +18,11 @@
     --accent: #6c63ff;
     --accent-soft: rgba(108,99,255,0.15);
     --green: #43e97b;
+    --green-soft: rgba(67,233,123,0.15);
     --yellow: #f9ca24;
+    --yellow-soft: rgba(249,202,36,0.15);
     --red: #ff4757;
+    --red-soft: rgba(255,71,87,0.15);
     --text: #e8eaf6;
     --muted: #8b8fad;
     --border: rgba(108,99,255,0.25);
@@ -38,7 +41,6 @@
   }
   button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 
-  /* ─── Layout ─── */
   .screen { display: none; min-height: 100vh; padding: 16px; max-width: 760px; margin: 0 auto; }
   .screen.active { display: flex; flex-direction: column; }
 
@@ -64,26 +66,70 @@
   .top-bar-spacer { width: 86px; }
 
   /* ─── HOME ─── */
-  #home-screen { justify-content: flex-start; padding-top: 40px; }
-  .hero { text-align: center; margin-bottom: 32px; padding: 0 16px; }
+  #home-screen { justify-content: flex-start; padding-top: 32px; }
+  .hero { text-align: center; margin-bottom: 24px; padding: 0 16px; }
   .logo-badge {
     display: inline-flex; align-items: center; gap: 6px;
     background: var(--accent-soft); border: 1px solid var(--border);
     color: var(--accent); font-size: 11px; font-weight: 700;
     letter-spacing: 1.5px; text-transform: uppercase;
-    padding: 7px 16px; border-radius: 99px; margin-bottom: 20px;
+    padding: 7px 16px; border-radius: 99px; margin-bottom: 18px;
   }
   h1.title {
     font-family: 'Sora', sans-serif;
-    font-size: clamp(28px, 6vw, 44px);
+    font-size: clamp(26px, 6vw, 40px);
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     background: linear-gradient(135deg, #fff 0%, #b4b6e0 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .subtitle { color: var(--muted); font-size: clamp(14px, 3vw, 16px); max-width: 480px; margin: 0 auto; }
+  .subtitle { color: var(--muted); font-size: clamp(13px, 2.8vw, 15px); max-width: 480px; margin: 0 auto; }
+
+  /* Próbavizsga hero card */
+  .exam-hero {
+    background: linear-gradient(135deg, #6c63ff 0%, #4338ca 100%);
+    border-radius: var(--radius);
+    padding: 24px 22px;
+    margin: 0 4px 28px;
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .exam-hero:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(108,99,255,0.4); }
+  .exam-hero::after {
+    content: '🎯';
+    position: absolute; right: -10px; bottom: -10px;
+    font-size: 100px; opacity: 0.15;
+    transform: rotate(-15deg);
+  }
+  .exam-hero-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; opacity: 0.85;
+    margin-bottom: 6px;
+  }
+  .exam-hero h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 22px; font-weight: 800;
+    margin-bottom: 6px;
+  }
+  .exam-hero p { font-size: 14px; opacity: 0.9; line-height: 1.45; }
+  .exam-hero-stat {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    padding: 4px 10px; border-radius: 99px;
+    font-size: 12px; font-weight: 600;
+    margin-top: 12px;
+  }
+
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--muted);
+    padding: 0 4px 12px;
+  }
 
   .module-grid {
     display: grid;
@@ -105,9 +151,7 @@
     content: ''; position: absolute; left: 0; top: 0; bottom: 0;
     width: 4px; background: var(--module-color, var(--accent));
   }
-  .module-icon {
-    font-size: 32px; line-height: 1;
-  }
+  .module-icon { font-size: 32px; line-height: 1; }
   .module-card-num { font-size: 11px; color: var(--muted); font-weight: 700; letter-spacing: 1px; }
   .module-card-name {
     font-family: 'Sora', sans-serif;
@@ -139,7 +183,7 @@
   .submodule-stats { font-size: 12px; color: var(--muted); margin-top: 3px; }
   .submodule-arrow { color: var(--muted); flex-shrink: 0; }
 
-  /* ─── Submodule detail (mode selector) ─── */
+  /* ─── Mode picker ─── */
   .mode-card {
     background: var(--card); border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -159,7 +203,7 @@
     display: inline-flex; align-items: center; justify-content: center;
     font-size: 28px;
   }
-  .mode-icon.green { background: rgba(67,233,123,0.15); }
+  .mode-icon.green { background: var(--green-soft); }
   .mode-info { flex: 1; }
   .mode-name { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 4px; }
   .mode-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
@@ -175,7 +219,7 @@
     margin: 0 4px 24px;
   }
 
-  /* ─── Flashcard mode (Tanulás) ─── */
+  /* ─── Flashcard ─── */
   .progress {
     display: flex; align-items: center; gap: 12px;
     background: var(--card); border: 1px solid var(--border);
@@ -184,17 +228,8 @@
     margin-bottom: 20px;
     font-size: 13px; color: var(--muted);
   }
-  .progress-bar {
-    flex: 1; height: 6px;
-    background: var(--bg-2);
-    border-radius: 99px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%; background: var(--accent);
-    border-radius: 99px;
-    transition: width .3s ease;
-  }
+  .progress-bar { flex: 1; height: 6px; background: var(--bg-2); border-radius: 99px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width .3s ease; }
 
   .flashcard-wrapper {
     perspective: 1200px;
@@ -204,8 +239,7 @@
     margin-bottom: 20px;
   }
   .flashcard {
-    width: 100%; max-width: 540px;
-    min-height: 320px;
+    width: 100%; max-width: 540px; min-height: 320px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.65s cubic-bezier(.4,0,.2,1);
@@ -232,52 +266,32 @@
     margin-bottom: 16px;
   }
   .face-label.back-label { color: var(--green); }
-  .face-content {
-    flex: 1;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center;
-  }
+  .face-content { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; }
   .face-front-text {
     font-family: 'Sora', sans-serif;
-    font-size: clamp(20px, 4vw, 26px);
-    font-weight: 700;
-    line-height: 1.35;
+    font-size: clamp(20px, 4vw, 26px); font-weight: 700; line-height: 1.35;
   }
   .face-back-text {
-    font-size: clamp(14px, 3vw, 16px);
-    line-height: 1.6;
-    text-align: left;
-    color: #d4d6f0;
+    font-size: clamp(14px, 3vw, 16px); line-height: 1.6;
+    text-align: left; color: #d4d6f0;
   }
-  .face-hint {
-    text-align: center;
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 16px;
-  }
+  .face-hint { text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
 
-  .flashcard-nav {
-    display: flex; gap: 12px; padding: 0 4px;
-  }
+  .flashcard-nav { display: flex; gap: 12px; padding: 0 4px; }
   .flashcard-nav button {
-    flex: 1;
-    padding: 14px;
+    flex: 1; padding: 14px;
     background: var(--card); border: 1px solid var(--border);
     border-radius: 14px;
-    color: var(--text);
-    font-weight: 600; font-size: 14px;
+    color: var(--text); font-weight: 600; font-size: 14px;
     transition: var(--transition);
     display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   }
   .flashcard-nav button:hover:not(:disabled) { background: var(--card-hover); border-color: var(--accent); }
   .flashcard-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
-  .flashcard-nav button.primary {
-    background: var(--accent);
-    border-color: var(--accent);
-  }
+  .flashcard-nav button.primary { background: var(--accent); border-color: var(--accent); }
   .flashcard-nav button.primary:hover:not(:disabled) { background: #5a52e0; }
 
-  /* ─── Quiz mode (Gyakorlás) ─── */
+  /* ─── Quiz ─── */
   .quiz-card {
     background: var(--card); border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -285,10 +299,8 @@
   }
   .quiz-question {
     font-family: 'Sora', sans-serif;
-    font-size: clamp(18px, 4vw, 22px);
-    font-weight: 700;
-    line-height: 1.35;
-    margin-bottom: 24px;
+    font-size: clamp(18px, 4vw, 22px); font-weight: 700;
+    line-height: 1.35; margin-bottom: 24px;
   }
   .answers-col { display: flex; flex-direction: column; gap: 10px; }
   .ans-btn {
@@ -296,20 +308,15 @@
     padding: 14px 16px;
     background: var(--bg-2); border: 1px solid var(--border);
     border-radius: 12px;
-    text-align: left;
-    transition: var(--transition);
-    color: var(--text);
-    font-size: 14.5px;
-    line-height: 1.4;
-    width: 100%;
+    text-align: left; transition: var(--transition);
+    color: var(--text); font-size: 14.5px; line-height: 1.4; width: 100%;
   }
   .ans-btn:hover:not(:disabled) { background: var(--card-2); border-color: var(--accent); }
   .ans-btn:disabled { cursor: not-allowed; }
-  .ans-btn.correct { background: rgba(67,233,123,0.15); border-color: var(--green); color: var(--green); }
-  .ans-btn.wrong { background: rgba(255,71,87,0.15); border-color: var(--red); color: var(--red); }
+  .ans-btn.correct { background: var(--green-soft); border-color: var(--green); color: var(--green); }
+  .ans-btn.wrong { background: var(--red-soft); border-color: var(--red); color: var(--red); }
   .ans-letter {
-    flex-shrink: 0;
-    width: 28px; height: 28px;
+    flex-shrink: 0; width: 28px; height: 28px;
     background: var(--accent-soft); color: var(--accent);
     border-radius: 8px;
     display: inline-flex; align-items: center; justify-content: center;
@@ -322,24 +329,19 @@
     background: var(--card); border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 12px;
-    padding: 14px 16px;
-    margin-top: 14px;
-    font-size: 14px;
-    color: #d4d6f0;
-    line-height: 1.55;
+    padding: 14px 16px; margin-top: 14px;
+    font-size: 14px; color: #d4d6f0; line-height: 1.55;
     display: none;
   }
   .explanation.show { display: block; }
   .explanation strong { color: var(--accent); }
 
   .next-btn {
-    width: 100%;
-    padding: 14px;
+    width: 100%; padding: 14px;
     background: var(--accent); color: #fff;
     border-radius: 12px;
     font-weight: 700; font-size: 15px;
-    margin-top: 14px;
-    transition: var(--transition);
+    margin-top: 14px; transition: var(--transition);
     display: none;
   }
   .next-btn.show { display: block; }
@@ -355,13 +357,10 @@
   }
   .hud-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
 
-  /* ─── Loading ─── */
   .loading-card {
     background: var(--card); border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 40px 24px;
-    text-align: center;
-    display: none;
+    padding: 40px 24px; text-align: center; display: none;
   }
   .loading-card.show { display: block; }
   .spinner {
@@ -372,15 +371,14 @@
     animation: spin 0.8s linear infinite;
     margin: 0 auto 16px;
   }
+  .spinner.small { width: 18px; height: 18px; border-width: 2px; margin: 0; display: inline-block; vertical-align: middle; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .loading-text { color: var(--muted); font-size: 14px; }
 
-  /* ─── Result screen ─── */
   .result-card {
     background: var(--card); border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 36px 24px;
-    text-align: center;
+    padding: 36px 24px; text-align: center;
   }
   .result-emoji { font-size: 64px; margin-bottom: 12px; }
   .result-title { font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 800; margin-bottom: 8px; }
@@ -389,33 +387,178 @@
   .result-msg { color: var(--muted); margin-bottom: 24px; }
   .result-actions { display: flex; flex-direction: column; gap: 10px; }
   .result-actions button {
-    padding: 14px;
-    border-radius: 12px;
-    font-weight: 700; font-size: 15px;
-    transition: var(--transition);
+    padding: 14px; border-radius: 12px;
+    font-weight: 700; font-size: 15px; transition: var(--transition);
   }
   .btn-primary { background: var(--accent); color: #fff; }
   .btn-primary:hover { background: #5a52e0; }
   .btn-secondary { background: var(--bg-2); color: var(--text); border: 1px solid var(--border); }
   .btn-secondary:hover { background: var(--card-hover); }
 
-  /* ─── Error ─── */
   .error-msg {
-    background: rgba(255,71,87,0.1);
-    border: 1px solid var(--red);
-    color: var(--red);
-    padding: 14px;
-    border-radius: 12px;
-    font-size: 14px;
-    margin-bottom: 16px;
+    background: var(--red-soft); border: 1px solid var(--red);
+    color: var(--red); padding: 14px; border-radius: 12px;
+    font-size: 14px; margin-bottom: 16px;
   }
 
-  /* ─── Mobile tweaks ─── */
+  /* ─── Próbavizsga setup ─── */
+  .setup-section { padding: 0 4px; }
+  .setup-head { font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+  .setup-sub { color: var(--muted); font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+  .warning-box {
+    background: var(--yellow-soft); border: 1px solid var(--yellow);
+    color: var(--yellow);
+    padding: 12px 14px; border-radius: 12px;
+    font-size: 13px; line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .warning-box strong { color: #ffe082; }
+  .option-group { margin-bottom: 20px; }
+  .option-label { font-size: 13px; color: var(--muted); margin-bottom: 8px; font-weight: 600; }
+  .option-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .option-buttons.three { grid-template-columns: repeat(3, 1fr); }
+  .opt-btn {
+    padding: 12px 8px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px;
+    font-weight: 600; font-size: 14px;
+    transition: var(--transition);
+    color: var(--text);
+  }
+  .opt-btn:hover { background: var(--card-hover); }
+  .opt-btn.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .opt-btn small { display: block; font-size: 11px; opacity: 0.7; margin-top: 2px; font-weight: 500; }
+  .start-exam-btn {
+    width: 100%; padding: 16px;
+    background: var(--accent); color: #fff;
+    border-radius: 14px;
+    font-weight: 700; font-size: 16px;
+    transition: var(--transition);
+    margin-top: 12px;
+  }
+  .start-exam-btn:hover { background: #5a52e0; transform: translateY(-1px); }
+
+  /* ─── Próbavizsga play ─── */
+  .exam-q-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 20px;
+    margin-bottom: 14px;
+  }
+  .exam-q-type {
+    display: inline-block;
+    font-size: 10px; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 99px;
+    margin-bottom: 14px;
+  }
+  .exam-q-type.tf { background: var(--accent-soft); color: var(--accent); }
+  .exam-q-type.text { background: var(--green-soft); color: var(--green); }
+  .exam-q-text {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(16px, 3.5vw, 19px); font-weight: 600;
+    line-height: 1.45; color: var(--text);
+    white-space: pre-wrap;
+  }
+  .tf-buttons {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    margin-top: 6px;
+  }
+  .tf-btn {
+    padding: 16px; border-radius: 12px;
+    background: var(--bg-2); border: 1px solid var(--border);
+    color: var(--text); font-weight: 700; font-size: 15px;
+    transition: var(--transition);
+  }
+  .tf-btn:hover:not(:disabled) { background: var(--card-2); border-color: var(--accent); }
+  .tf-btn:disabled { cursor: not-allowed; }
+  .tf-btn.correct { background: var(--green-soft); border-color: var(--green); color: var(--green); }
+  .tf-btn.wrong { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+
+  .show-ans-btn {
+    width: 100%; padding: 14px;
+    background: var(--accent); color: #fff;
+    border-radius: 12px;
+    font-weight: 700; font-size: 15px;
+    margin-top: 6px;
+    transition: var(--transition);
+  }
+  .show-ans-btn:hover { background: #5a52e0; }
+
+  .ans-reveal {
+    background: var(--card); border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 14px;
+    font-size: 14.5px; color: #d4d6f0; line-height: 1.55;
+    white-space: pre-wrap;
+  }
+  .ans-reveal-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 1.3px;
+    text-transform: uppercase; color: var(--green);
+    margin-bottom: 6px;
+  }
+  .self-mark {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    margin-top: 14px;
+  }
+  .self-btn {
+    padding: 12px; border-radius: 12px;
+    border: 1px solid var(--border);
+    font-weight: 600; font-size: 14px;
+    transition: var(--transition);
+  }
+  .self-btn.knew { background: var(--green-soft); color: var(--green); }
+  .self-btn.knew:hover { background: rgba(67,233,123,0.25); }
+  .self-btn.miss { background: var(--red-soft); color: var(--red); }
+  .self-btn.miss:hover { background: rgba(255,71,87,0.25); }
+
+  .verify-btn {
+    width: 100%; padding: 12px;
+    background: transparent; border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--accent); font-weight: 600; font-size: 13.5px;
+    margin-top: 10px; transition: var(--transition);
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .verify-btn:hover:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); }
+  .verify-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  .verify-result {
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    font-size: 13.5px; line-height: 1.55;
+    border: 1px solid;
+  }
+  .verify-result.helyes { background: var(--green-soft); border-color: var(--green); }
+  .verify-result.helyes .v-head { color: var(--green); }
+  .verify-result.vitatható { background: var(--yellow-soft); border-color: var(--yellow); }
+  .verify-result.vitatható .v-head { color: var(--yellow); }
+  .verify-result.helytelen { background: var(--red-soft); border-color: var(--red); }
+  .verify-result.helytelen .v-head { color: var(--red); }
+  .v-head { font-weight: 700; font-size: 13px; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .v-body { color: #d4d6f0; }
+  .v-current { margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.1); }
+  .v-current strong { color: var(--text); }
+
+  .exam-skip-btn {
+    width: 100%; padding: 12px;
+    background: transparent; color: var(--muted);
+    font-size: 13px; margin-top: 10px;
+    border: 1px dashed var(--border); border-radius: 12px;
+    transition: var(--transition);
+  }
+  .exam-skip-btn:hover { color: var(--text); border-color: var(--accent); }
+
   @media (max-width: 640px) {
     .module-grid { grid-template-columns: 1fr; }
     .flashcard, .flashcard-wrapper { min-height: 360px; }
     .flashcard-face { padding: 24px 20px; }
     .top-bar-title { font-size: 14px; }
+    .option-buttons { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -426,8 +569,17 @@
   <div class="hero">
     <span class="logo-badge">📚 Közigazgatási Alapvizsga</span>
     <h1 class="title">Tanulj kártyákkal,<br>vizsgázz játszva</h1>
-    <p class="subtitle">7 modul, 22 almodul, 150+ tanulókártya. A 15. kiadású (2026) tankönyv alapján.</p>
+    <p class="subtitle">A 15. kiadású (2026) tankönyv alapján. 7 modul, 22 almodul, 150+ tanulókártya és valódi vizsgakérdés-adatbázis.</p>
   </div>
+
+  <button class="exam-hero" onclick="openExamSetup()">
+    <div class="exam-hero-label">🎯 Új funkció</div>
+    <h2>Próbavizsga</h2>
+    <p>Több mint 1000 valódi vizsgakérdés adatbázisából véletlenszerű kérdéssor – minden alkalommal más sorrendben és más kérdésekkel.</p>
+    <span class="exam-hero-stat" id="exam-bank-stat">1068 kérdés betöltése…</span>
+  </button>
+
+  <div class="section-label">📖 Tanulás modulonként</div>
   <div id="module-grid" class="module-grid"></div>
 </section>
 
@@ -441,7 +593,7 @@
   <div id="submodule-list" class="submodule-list"></div>
 </section>
 
-<!-- ───────────── SUBMODULE DETAIL (mode picker) ───────────── -->
+<!-- ───────────── MODE PICKER ───────────── -->
 <section id="modes-screen" class="screen">
   <div class="top-bar">
     <button class="back-btn" id="modes-back-btn">← Vissza</button>
@@ -463,8 +615,8 @@
   <button class="mode-card" onclick="startQuiz()">
     <span class="mode-icon green">❓</span>
     <span class="mode-info">
-      <span class="mode-name">Gyakorlás (kvíz)</span>
-      <span class="mode-desc">AI által generált 10 kérdés ebből az almodulból. Azonnali magyarázattal a könyv tartalma alapján.</span>
+      <span class="mode-name">Gyakorlás (AI kvíz)</span>
+      <span class="mode-desc">AI által generált 10 kérdés ebből az almodulból, azonnali magyarázattal a könyv tartalma alapján.</span>
     </span>
     <span class="mode-arrow">›</span>
   </button>
@@ -504,7 +656,7 @@
   </div>
 </section>
 
-<!-- ───────────── QUIZ ───────────── -->
+<!-- ───────────── AI QUIZ ───────────── -->
 <section id="quiz-screen" class="screen">
   <div class="top-bar">
     <button class="back-btn" id="quiz-back-btn">← Vissza</button>
@@ -533,6 +685,100 @@
   </div>
 </section>
 
+<!-- ───────────── EXAM SETUP ───────────── -->
+<section id="exam-setup-screen" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="showHome()">← Vissza</button>
+    <span class="top-bar-title">Próbavizsga beállítása</span>
+    <span class="top-bar-spacer"></span>
+  </div>
+
+  <div class="setup-section">
+    <h2 class="setup-head">🎯 Próbavizsga</h2>
+    <p class="setup-sub">A vizsgakérdéseket egy 2017-es nagy, valódi adatbázisból válogatjuk véletlenszerűen. Minden indításnál más kérdéseket kapsz, más sorrendben.</p>
+
+    <div class="warning-box">
+      <strong>⚠️ Megjegyzés a hatályosságról:</strong> Ez az adatbázis 2017-es állapotot tükröz. Néhány kérdés tartalma azóta változhatott (új törvények, intézményi átszervezések). Minden kérdéshez elérhető a <strong>"Mit mond a könyv?"</strong> gomb, amely AI-jal összeveti a választ a 2026-os tankönyvvel.
+    </div>
+
+    <div class="option-group">
+      <div class="option-label">Hány kérdés legyen?</div>
+      <div class="option-buttons" id="count-options">
+        <button class="opt-btn" data-count="10">10 <small>~3 perc</small></button>
+        <button class="opt-btn selected" data-count="25">25 <small>~8 perc</small></button>
+        <button class="opt-btn" data-count="50">50 <small>~15 perc</small></button>
+        <button class="opt-btn" data-count="100">100 <small>~30 perc</small></button>
+      </div>
+    </div>
+
+    <div class="option-group">
+      <div class="option-label">Milyen típusú kérdéseket szeretnél?</div>
+      <div class="option-buttons three" id="type-options">
+        <button class="opt-btn selected" data-type="all">Vegyes</button>
+        <button class="opt-btn" data-type="tf">Csak Igaz/Hamis</button>
+        <button class="opt-btn" data-type="text">Csak kifejtős</button>
+      </div>
+    </div>
+
+    <button class="start-exam-btn" onclick="startExam()">🚀 Indítás</button>
+  </div>
+</section>
+
+<!-- ───────────── EXAM PLAY ───────────── -->
+<section id="exam-screen" class="screen">
+  <div class="top-bar">
+    <button class="back-btn" onclick="confirmExamExit()">← Kilépés</button>
+    <span class="top-bar-title">Próbavizsga</span>
+    <span class="top-bar-spacer"></span>
+  </div>
+
+  <div class="hud">
+    <span class="hud-item">📊 <span id="exam-progress">1 / 25</span></span>
+    <span class="hud-item">✅ <span id="exam-correct">0</span></span>
+    <span class="hud-item">❌ <span id="exam-wrong">0</span></span>
+  </div>
+
+  <div class="progress">
+    <span id="exam-progress-label">1 / 25</span>
+    <div class="progress-bar"><div class="progress-fill" id="exam-progress-fill"></div></div>
+  </div>
+
+  <div class="exam-q-card">
+    <span class="exam-q-type" id="exam-q-type">IGAZ / HAMIS</span>
+    <div class="exam-q-text" id="exam-q-text"></div>
+  </div>
+
+  <!-- TF buttons (for tf questions) -->
+  <div class="tf-buttons" id="exam-tf-buttons" style="display:none">
+    <button class="tf-btn" id="exam-tf-true" onclick="answerTF('Igaz')">✓ Igaz</button>
+    <button class="tf-btn" id="exam-tf-false" onclick="answerTF('Hamis')">✗ Hamis</button>
+  </div>
+
+  <!-- Show answer button (for text questions) -->
+  <button class="show-ans-btn" id="exam-show-ans-btn" style="display:none" onclick="revealTextAnswer()">👁️ Mutasd a választ</button>
+
+  <!-- Answer reveal -->
+  <div class="ans-reveal" id="exam-ans-reveal" style="display:none">
+    <div class="ans-reveal-label">Adatbázis szerinti válasz</div>
+    <div id="exam-ans-text"></div>
+  </div>
+
+  <!-- Self-mark for text questions -->
+  <div class="self-mark" id="exam-self-mark" style="display:none">
+    <button class="self-btn miss" onclick="selfMark(false)">✗ Nem tudtam</button>
+    <button class="self-btn knew" onclick="selfMark(true)">✓ Tudtam</button>
+  </div>
+
+  <!-- AI verify button -->
+  <button class="verify-btn" id="exam-verify-btn" style="display:none" onclick="verifyAgainstBook()">📖 Mit mond a könyv?</button>
+
+  <!-- AI verify result -->
+  <div id="exam-verify-result"></div>
+
+  <!-- Next button -->
+  <button class="next-btn" id="exam-next-btn" onclick="nextExamQuestion()">Következő →</button>
+</section>
+
 <!-- ───────────── RESULT ───────────── -->
 <section id="result-screen" class="screen">
   <div class="result-card">
@@ -540,43 +786,57 @@
     <div class="result-title" id="result-title">Szuper munka!</div>
     <div class="result-score"><span id="result-correct">0</span><span class="denom">/<span id="result-total">10</span></span></div>
     <div class="result-msg" id="result-msg"></div>
-    <div class="result-actions">
-      <button class="btn-primary" onclick="retryQuiz()">🔄 Újra ezt az almodult</button>
-      <button class="btn-secondary" onclick="backToSubmodules()">📚 Másik almodul</button>
-      <button class="btn-secondary" onclick="showHome()">🏠 Főoldal</button>
-    </div>
+    <div class="result-actions" id="result-actions"></div>
   </div>
 </section>
 
 <script>
-// ─── State ───
-let DATA = null;
+// ═══════════════════════ STATE ═══════════════════════
+let FLASHCARDS = null;
+let EXAM_BANK = null;
 let currentModule = null;
 let currentSubmodule = null;
 
-// Flashcard state
+// Flashcards
 let learnIndex = 0;
 let learnCards = [];
 
-// Quiz state
+// AI Quiz
 let quizQuestions = [];
 let quizIndex = 0;
 let quizCorrect = 0;
 let quizWrong = 0;
 let quizAnswered = false;
 
-// ─── Data load ───
+// Practice exam (Próbavizsga)
+let examQuestions = [];
+let examIndex = 0;
+let examCorrect = 0;
+let examWrong = 0;
+let examAnswered = false;
+let examSettings = { count: 25, type: 'all' };
+
+// ═══════════════════════ DATA LOAD ═══════════════════════
 async function loadData() {
   try {
-    const res = await fetch('data/flashcards.json');
-    DATA = await res.json();
+    const [fc, eb] = await Promise.all([
+      fetch('data/flashcards.json').then(r => r.json()),
+      fetch('data/exam-bank.json').then(r => r.json()).catch(() => null)
+    ]);
+    FLASHCARDS = fc;
+    EXAM_BANK = eb;
     renderHome();
+    if (EXAM_BANK && EXAM_BANK.questions) {
+      document.getElementById('exam-bank-stat').textContent = `${EXAM_BANK.questions.length} kérdés betöltve`;
+    } else {
+      document.getElementById('exam-bank-stat').textContent = 'Adatbázis nem érhető el';
+    }
   } catch (e) {
     document.body.innerHTML = '<div style="padding:40px;text-align:center;color:#ff4757">Hiba a kártyák betöltésekor: ' + e.message + '</div>';
   }
 }
 
-// ─── Screen control ───
+// ═══════════════════════ SCREEN CONTROL ═══════════════════════
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
@@ -589,11 +849,11 @@ function showHome() {
   currentSubmodule = null;
 }
 
-// ─── Render Home: module grid ───
+// ═══════════════════════ HOME ═══════════════════════
 function renderHome() {
   const grid = document.getElementById('module-grid');
   grid.innerHTML = '';
-  DATA.modules.forEach(m => {
+  FLASHCARDS.modules.forEach(m => {
     const totalCards = m.submodules.reduce((sum, sm) => sum + sm.cards.length, 0);
     const btn = document.createElement('button');
     btn.className = 'module-card';
@@ -609,14 +869,13 @@ function renderHome() {
   });
 }
 
-// ─── Submodule list ───
+// ═══════════════════════ MODULE → SUBMODULES ═══════════════════════
 function openModule(m) {
   currentModule = m;
   document.getElementById('submodules-title').textContent = `${m.id}. modul`;
   const list = document.getElementById('submodule-list');
   list.innerHTML = '';
 
-  // Module heading
   const heading = document.createElement('div');
   heading.style.padding = '0 4px 12px';
   heading.innerHTML = `
@@ -643,7 +902,6 @@ function openModule(m) {
   showScreen('submodules-screen');
 }
 
-// ─── Submodule detail (mode picker) ───
 function openSubmodule(sm) {
   currentSubmodule = sm;
   document.getElementById('modes-title').textContent = `${currentModule.id}. modul · ${sm.id}`;
@@ -653,7 +911,7 @@ function openSubmodule(sm) {
   showScreen('modes-screen');
 }
 
-// ─── Learning Mode (flashcards) ───
+// ═══════════════════════ FLASHCARDS ═══════════════════════
 function startLearning() {
   learnCards = currentSubmodule.cards;
   learnIndex = 0;
@@ -675,35 +933,23 @@ function renderFlashcard() {
   nextBtn.textContent = learnIndex === learnCards.length - 1 ? '✓ Befejezés' : 'Következő →';
 }
 
-function flipCard() {
-  document.getElementById('flashcard').classList.toggle('flipped');
-}
+function flipCard() { document.getElementById('flashcard').classList.toggle('flipped'); }
 
 function nextCard() {
-  if (learnIndex === learnCards.length - 1) {
-    // Done - go back to submodule
-    openSubmodule(currentSubmodule);
-    return;
-  }
-  learnIndex++;
-  renderFlashcard();
+  if (learnIndex === learnCards.length - 1) { openSubmodule(currentSubmodule); return; }
+  learnIndex++; renderFlashcard();
 }
+function prevCard() { if (learnIndex === 0) return; learnIndex--; renderFlashcard(); }
 
-function prevCard() {
-  if (learnIndex === 0) return;
-  learnIndex--;
-  renderFlashcard();
-}
-
-// Keyboard: arrows + space for flip
 document.addEventListener('keydown', (e) => {
-  if (!document.getElementById('learn-screen').classList.contains('active')) return;
-  if (e.key === 'ArrowRight') nextCard();
-  else if (e.key === 'ArrowLeft') prevCard();
-  else if (e.key === ' ' || e.key === 'Enter') { flipCard(); e.preventDefault(); }
+  if (document.getElementById('learn-screen').classList.contains('active')) {
+    if (e.key === 'ArrowRight') nextCard();
+    else if (e.key === 'ArrowLeft') prevCard();
+    else if (e.key === ' ' || e.key === 'Enter') { flipCard(); e.preventDefault(); }
+  }
 });
 
-// ─── Quiz Mode ───
+// ═══════════════════════ AI QUIZ ═══════════════════════
 async function startQuiz() {
   document.getElementById('quiz-title').textContent = `${currentSubmodule.id} ${currentSubmodule.name}`;
   document.getElementById('quiz-back-btn').onclick = () => {
@@ -736,7 +982,6 @@ async function startQuiz() {
     const data = await res.json();
     if (!data.questions || data.questions.length === 0) throw new Error('Üres válasz');
     quizQuestions = data.questions;
-
     document.getElementById('quiz-loading').classList.remove('show');
     document.getElementById('quiz-card').style.display = 'block';
     renderQuizQuestion();
@@ -744,7 +989,7 @@ async function startQuiz() {
     document.getElementById('quiz-loading').classList.remove('show');
     const err = document.getElementById('quiz-error');
     err.style.display = 'block';
-    err.innerHTML = `❌ Nem sikerült betölteni a kérdéseket: <strong>${e.message}</strong><br>Ellenőrizd a Vercel beállításokat (ANTHROPIC_API_KEY) vagy próbáld újra később.`;
+    err.innerHTML = `❌ Nem sikerült betölteni a kérdéseket: <strong>${e.message}</strong>`;
   }
 }
 
@@ -778,11 +1023,7 @@ function selectQuizAnswer(i, btn) {
     if (idx === q.correct) b.classList.add('correct');
     else if (idx === i && idx !== q.correct) b.classList.add('wrong');
   });
-  if (i === q.correct) {
-    quizCorrect++;
-  } else {
-    quizWrong++;
-  }
+  if (i === q.correct) quizCorrect++; else quizWrong++;
   updateQuizHUD();
   const exp = document.getElementById('quiz-explanation');
   exp.innerHTML = '<strong>Magyarázat:</strong> ' + (q.explanation || 'Nincs elérhető magyarázat.');
@@ -793,37 +1034,253 @@ function selectQuizAnswer(i, btn) {
 }
 
 function nextQuizQuestion() {
-  if (quizIndex === quizQuestions.length - 1) { showResult(); return; }
-  quizIndex++;
-  renderQuizQuestion();
+  if (quizIndex === quizQuestions.length - 1) { showQuizResult(); return; }
+  quizIndex++; renderQuizQuestion();
 }
-
 function updateQuizHUD() {
   document.getElementById('quiz-correct').textContent = quizCorrect;
   document.getElementById('quiz-wrong').textContent = quizWrong;
 }
 
-// ─── Result ───
-function showResult() {
-  const total = quizQuestions.length;
-  const pct = Math.round(quizCorrect / total * 100);
-  document.getElementById('result-correct').textContent = quizCorrect;
+function showQuizResult() {
+  showResult(quizCorrect, quizQuestions.length, 'quiz');
+}
+
+// ═══════════════════════ EXAM SETUP & PLAY ═══════════════════════
+function openExamSetup() {
+  if (!EXAM_BANK || !EXAM_BANK.questions || !EXAM_BANK.questions.length) {
+    alert('A vizsgakérdés-adatbázis nem érhető el. Próbáld újra később.');
+    return;
+  }
+  // Bind option buttons
+  document.querySelectorAll('#count-options .opt-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('#count-options .opt-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      examSettings.count = parseInt(btn.dataset.count);
+    };
+  });
+  document.querySelectorAll('#type-options .opt-btn').forEach(btn => {
+    btn.onclick = () => {
+      document.querySelectorAll('#type-options .opt-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      examSettings.type = btn.dataset.type;
+    };
+  });
+  showScreen('exam-setup-screen');
+}
+
+function shuffle(arr) {
+  // Fisher-Yates
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startExam() {
+  let pool = EXAM_BANK.questions;
+  if (examSettings.type === 'tf') pool = pool.filter(q => q.type === 'tf');
+  else if (examSettings.type === 'text') pool = pool.filter(q => q.type === 'text');
+
+  if (pool.length === 0) {
+    alert('Nincs kérdés ezekre a feltételekre.');
+    return;
+  }
+
+  // Shuffle and take N
+  const n = Math.min(examSettings.count, pool.length);
+  examQuestions = shuffle(pool).slice(0, n);
+  examIndex = 0; examCorrect = 0; examWrong = 0; examAnswered = false;
+  renderExamQuestion();
+  showScreen('exam-screen');
+}
+
+function renderExamQuestion() {
+  const q = examQuestions[examIndex];
+  examAnswered = false;
+
+  document.getElementById('exam-progress').textContent = `${examIndex + 1} / ${examQuestions.length}`;
+  document.getElementById('exam-progress-label').textContent = `${examIndex + 1} / ${examQuestions.length}`;
+  document.getElementById('exam-progress-fill').style.width = ((examIndex + 1) / examQuestions.length * 100) + '%';
+  document.getElementById('exam-correct').textContent = examCorrect;
+  document.getElementById('exam-wrong').textContent = examWrong;
+
+  const typeLabel = document.getElementById('exam-q-type');
+  typeLabel.className = 'exam-q-type ' + q.type;
+  typeLabel.textContent = q.type === 'tf' ? '✓ / ✗  IGAZ vagy HAMIS' : '✎ Kifejtős / kiegészítős';
+
+  document.getElementById('exam-q-text').textContent = q.q;
+
+  // Reset display
+  document.getElementById('exam-tf-buttons').style.display = q.type === 'tf' ? 'grid' : 'none';
+  document.getElementById('exam-show-ans-btn').style.display = q.type === 'text' ? 'block' : 'none';
+  document.getElementById('exam-ans-reveal').style.display = 'none';
+  document.getElementById('exam-self-mark').style.display = 'none';
+  document.getElementById('exam-verify-btn').style.display = 'none';
+  document.getElementById('exam-next-btn').classList.remove('show');
+  document.getElementById('exam-verify-result').innerHTML = '';
+
+  // Reset TF button styles
+  const tBtn = document.getElementById('exam-tf-true');
+  const fBtn = document.getElementById('exam-tf-false');
+  tBtn.className = 'tf-btn'; fBtn.className = 'tf-btn';
+  tBtn.disabled = false; fBtn.disabled = false;
+}
+
+function answerTF(userAns) {
+  if (examAnswered) return;
+  examAnswered = true;
+  const q = examQuestions[examIndex];
+  const correct = q.a.toLowerCase() === userAns.toLowerCase();
+  const tBtn = document.getElementById('exam-tf-true');
+  const fBtn = document.getElementById('exam-tf-false');
+  tBtn.disabled = true; fBtn.disabled = true;
+
+  if (q.a === 'Igaz') tBtn.classList.add('correct'); else fBtn.classList.add('correct');
+  if (!correct) {
+    if (userAns === 'Igaz') tBtn.classList.add('wrong'); else fBtn.classList.add('wrong');
+    examWrong++;
+  } else {
+    examCorrect++;
+  }
+  document.getElementById('exam-correct').textContent = examCorrect;
+  document.getElementById('exam-wrong').textContent = examWrong;
+
+  document.getElementById('exam-verify-btn').style.display = 'inline-flex';
+  document.getElementById('exam-next-btn').textContent = examIndex === examQuestions.length - 1 ? '🏁 Eredmények' : 'Következő →';
+  document.getElementById('exam-next-btn').classList.add('show');
+}
+
+function revealTextAnswer() {
+  document.getElementById('exam-show-ans-btn').style.display = 'none';
+  const q = examQuestions[examIndex];
+  document.getElementById('exam-ans-text').textContent = q.a;
+  document.getElementById('exam-ans-reveal').style.display = 'block';
+  document.getElementById('exam-self-mark').style.display = 'grid';
+  document.getElementById('exam-verify-btn').style.display = 'inline-flex';
+}
+
+function selfMark(knew) {
+  if (examAnswered) return;
+  examAnswered = true;
+  if (knew) examCorrect++; else examWrong++;
+  document.getElementById('exam-correct').textContent = examCorrect;
+  document.getElementById('exam-wrong').textContent = examWrong;
+  // Disable self-mark
+  document.querySelectorAll('.self-btn').forEach(b => b.disabled = true);
+  document.getElementById('exam-next-btn').textContent = examIndex === examQuestions.length - 1 ? '🏁 Eredmények' : 'Következő →';
+  document.getElementById('exam-next-btn').classList.add('show');
+}
+
+async function verifyAgainstBook() {
+  const q = examQuestions[examIndex];
+  const btn = document.getElementById('exam-verify-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner small"></span> Ellenőrzés a tankönyvvel…';
+  const resultEl = document.getElementById('exam-verify-result');
+  resultEl.innerHTML = '';
+
+  // Build book context from flashcards.json contexts (all 22 submodules)
+  let bookContext = '';
+  if (FLASHCARDS && FLASHCARDS.modules) {
+    bookContext = FLASHCARDS.modules.flatMap(m =>
+      m.submodules.map(sm => `[${sm.id}. ${sm.name}] ${sm.context}`)
+    ).join('\n\n');
+  }
+
+  try {
+    const res = await fetch('/api/verify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        question: q.q,
+        providedAnswer: q.a,
+        type: q.type,
+        bookContext: bookContext
+      })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || 'API hiba: ' + res.status);
+    }
+    const data = await res.json();
+    const verdict = data.verdict || 'vitatható';
+    const verdictLabel = verdict === 'helyes' ? '✓ Helyes válasz'
+                       : verdict === 'helytelen' ? '✗ Helytelen / elavult válasz'
+                       : '⚠️ Vitatható / pontosítható';
+    const verdictClass = verdict.replace(/[^a-zé]/g, '');
+    let html = `<div class="verify-result ${verdictClass}">
+      <div class="v-head">${verdictLabel}</div>
+      <div class="v-body">${data.explanation || ''}</div>`;
+    if (data.currentAnswer && verdict !== 'helyes') {
+      html += `<div class="v-current"><strong>A 2026-os tankönyv szerint:</strong> ${data.currentAnswer}</div>`;
+    }
+    html += `</div>`;
+    resultEl.innerHTML = html;
+    btn.style.display = 'none';
+  } catch (e) {
+    resultEl.innerHTML = `<div class="verify-result helytelen">
+      <div class="v-head">⚠️ Hiba</div>
+      <div class="v-body">${e.message}</div>
+    </div>`;
+    btn.disabled = false;
+    btn.innerHTML = '📖 Mit mond a könyv?';
+  }
+}
+
+function nextExamQuestion() {
+  if (examIndex === examQuestions.length - 1) { showExamResult(); return; }
+  examIndex++;
+  renderExamQuestion();
+}
+
+function confirmExamExit() {
+  if (confirm('Biztosan kilépsz a próbavizsgából? Az aktuális eredmény elveszik.')) {
+    showHome();
+  }
+}
+
+function showExamResult() {
+  showResult(examCorrect, examQuestions.length, 'exam');
+}
+
+// ═══════════════════════ RESULT ═══════════════════════
+function showResult(correct, total, source) {
+  const pct = Math.round(correct / total * 100);
+  document.getElementById('result-correct').textContent = correct;
   document.getElementById('result-total').textContent = total;
+
   let emoji, title, msg;
-  if (pct >= 90) { emoji = '🏆'; title = 'Kiváló!'; msg = 'Mester szinten ismered ezt az almodult.'; }
+  if (pct >= 90) { emoji = '🏆'; title = 'Kiváló!'; msg = 'Mester szinten ismered a tananyagot.'; }
   else if (pct >= 70) { emoji = '🎉'; title = 'Szép munka!'; msg = 'Jól haladsz, csak néhány részlet hiányzik.'; }
   else if (pct >= 50) { emoji = '💪'; title = 'Nem rossz!'; msg = 'Érdemes átolvasni a tanulókártyákat újra.'; }
   else { emoji = '📚'; title = 'Tanulj még!'; msg = 'Ajánlott visszamenni a tanulókártyákhoz.'; }
+
   document.getElementById('result-emoji').textContent = emoji;
   document.getElementById('result-title').textContent = title;
   document.getElementById('result-msg').textContent = msg;
+
+  const actions = document.getElementById('result-actions');
+  actions.innerHTML = '';
+  if (source === 'exam') {
+    actions.innerHTML = `
+      <button class="btn-primary" onclick="openExamSetup()">🔄 Új próbavizsga</button>
+      <button class="btn-secondary" onclick="showHome()">🏠 Főoldal</button>
+    `;
+  } else {
+    actions.innerHTML = `
+      <button class="btn-primary" onclick="startQuiz()">🔄 Újra ezt az almodult</button>
+      <button class="btn-secondary" onclick="openModule(currentModule)">📚 Másik almodul</button>
+      <button class="btn-secondary" onclick="showHome()">🏠 Főoldal</button>
+    `;
+  }
   showScreen('result-screen');
 }
 
-function retryQuiz() { startQuiz(); }
-function backToSubmodules() { openModule(currentModule); }
-
-// ─── Init ───
+// ═══════════════════════ INIT ═══════════════════════
 loadData();
 </script>
 </body>
